@@ -3,20 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="resources/images/logo.png">
+    <link rel="icon" href="../resources/images/logo.png">
     <title>Le Timeless Trésor</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../css/global.css">
 
-    <link rel="stylesheet" href="css/flickity.css" media="screen">
+    <link rel="stylesheet" href="../css/flickity.css" media="screen">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="../css/navbar.css">
   </head>
   <body>
     <nav class="topnav" id="myTopnav">
         <div class="container">
-          <a href="index.html" style="padding:0; display:inline">
-            <img src="resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
+          <a href="../html/portfolio.html" style="padding:0; display:inline">
+            <img src="" alt="Logo" class="nav-logo" id="navLogo">
           </a>
           <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
           <div class="nav-items">
@@ -25,10 +24,10 @@
                 <i class="ti-angle-down"></i>
               </button>
               <div class="dropdown-content">
-                <a href="pages/abouts.html">About Us<i class="ti-angle-right"></i></a>
-                <a href="pages/accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
-                <a href="pages/facilities.html">Facilities<i class="ti-angle-right"></i></a>
-                <a href="pages/services.html">Services<i class="ti-angle-right"></i></a>
+                <a href="">About Us<i class="ti-angle-right"></i></a>
+                <a href="">Accomodations<i class="ti-angle-right"></i></a>
+                <a href="">Facilities<i class="ti-angle-right"></i></a>
+                <a href="">Services<i class="ti-angle-right"></i></a>
               </div>
             </div>
             <div class="dropdown">
@@ -36,9 +35,9 @@
                 <i class="ti-angle-down"></i>
               </button>
               <div class="dropdown-content">
-                <a href="pages/foodandbeverage.html">The Restaurant<i class="ti-angle-right"></i></a>
-                <a href="pages/restaurant_reservation.html">Reservation<i class="ti-angle-right"></i></a>
-                <a href="pages/onlineordering.html">Ordering<i class="ti-angle-right"></i></a>
+                <a href="">The Restaurant<i class="ti-angle-right"></i></a>
+                <a href="">Reservation<i class="ti-angle-right"></i></a>
+                <a href="">Ordering<i class="ti-angle-right"></i></a>
               </div>
             </div>
             <div class="dropdown">
@@ -46,9 +45,9 @@
                 <i class="ti-angle-down"></i>
               </button>
               <div class="dropdown-content">
-                <a href="pages/events.html">Events<i class="ti-angle-right"></i></a>
-                <a href="pages/eventreservation.html">Events Reservation<i class="ti-angle-right"></i></a>
-                <a href="pages/promotion.html">Promotions<i class="ti-angle-right"></i></a>
+                <a href="">Events<i class="ti-angle-right"></i></a>
+                <a href="">Events Reservation<i class="ti-angle-right"></i></a>
+                <a href="">Promotions<i class="ti-angle-right"></i></a>
               </div>
             </div>
             <div class="dropdown">
@@ -56,19 +55,18 @@
                <i class="ti-angle-down"></i>
              </button>
              <div class="dropdown-content">
-               <a href="pages/gallery.html">Overview<i class="ti-angle-right"></i></a>
-               <a href="pages/gallery360.html">360° Photos<i class="ti-angle-right"></i></a>
+               <a href="">Overview<i class="ti-angle-right"></i></a>
+               <a href="">360° Photos<i class="ti-angle-right"></i></a>
              </div>
            </div>
-            <a href="pages/contactus.html">Contact</a>
-            <a href="pages/booking.html" class="active">Book Now</a>
+            <a href="">Contact</a>
+            <a href="" class="active">Book Now</a>
             <div class="dropdown">
-              <button class="dropbtn"><img src="resources/images/user_white.png" alt="account" id="account" width="18px">
+              <button class="dropbtn"><img src="../resources/images/user_white.png" alt="account" id="account" width="18px">
                 <i class="ti-angle-down"></i>
               </button>
               <div class="dropdown-content" style="min-width:120px">
-                <a href="pages/signin.html">Sign In<i class="ti-angle-right"></i></a>
-                <a href="pages/signup.html">Sign Up<i class="ti-angle-right"></i></a>
+
               </div>
             </div>
           </div>
@@ -76,46 +74,161 @@
         <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
           <i class="ti-angle-down"></i>
         </div>
-        <div class="book-btn" id="sideBtn" onclick="displayBookingForm()">
-          <p class="book-arrow"><i class="ti-angle-up"></i></p>
-          <p class="book-title">Book Now</p>
-        </div>
-        <div class="book-form" id="bookForm">
-          <h4>Le Timeless Trésor</h4>
-          <h2>Check Availability</h2>
-          <input class="chk-in input-style1" type="text" placeholder="Check in" onfocus="(this.type='date')" onblur="(this.type='text')">
-          <input class="chk-out input-style1" type="text" placeholder="Check out" onfocus="(this.type='date')" onblur="(this.type='text')">
-          <select class="room input-style2" name="adult">
-            <option value="">Room Type</option>
-            <option value="Junior Room">Junior Room</option>
-            <option value="Double Room">Double Room</option>
-            <option value="Family Suite">Family Suite</option>
-            <option value="Deluxe Suite">Deluxe Suite</option>
-          </select>
-          <div class="form-container" style="padding: 0px 7.5px 0px 0px">
-            <select class="adult input-style2" name="adult">
-              <option value="">Adult</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
-          </div>
-          <div class="form-container" style="padding: 0px 0px 0px 7.5px">
-            <select class="child input-style2" name="">
-              <option value="">Child</option>
-              <option value="0">0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
-          </div>
-          <a href="pages/booking.html" style="display:block;width:100%;padding:0"><button class="button-style1">Check Availability<i class="ti-angle-right"></i></button></a>
-        </div>
-        <script type="text/javascript" src="js/index.js"></script>
+        
+        
+        <script type="text/javascript" src="../js/portfolio.js"></script>
       </nav>
+
+      <header class="banner" onclick="dismissBookingForm()">
+        <div class="layer"></div>
+        
+        <div class="container">
+          <div class="heading">
+            <span style="display: none; width: 100%;margin-bottom: 10px;">
+              <i class="star-rating"></i>
+              <i class="star-rating"></i>
+              <i class="star-rating"></i>
+              <i class="star-rating"></i>
+              <i class="star-rating"></i>
+            </span>
+            <p class="section-subheading">Le Timeless Trésor</p>
+            <h1 class="title">True Vintage<br>Luxury</h1>
+          </div>
+        </div>
+        <div class="con-details">
+          <div class="container">
+            <p><a href="tel: +65 9684 4857"><i class="fa-solid fa-phone"></i> +65 9684 4857</a></p>
+            <p><a href="mailto: LeTimelessTresor@resort.com"><i class="fa-solid fa-envelope"></i> LeTimelessTresor@resort.com</a></p>
+          </div>
+        </div>
+      </header>
+
+      <section class="section7" onclick="dismissBookingForm()">
+        <div class="container">
+          <div class="title-container">
+            <h4 class="section-subheading"><i class="fa-solid fa-calendar-day"></i> Exclusive</h4>
+            <h1 class="section-title">Events & Promotions</h1>
+            <hr class="horizontal-line">
+            <p class="section-sub-title">Discover our latest events and promotions the resort has to offer.</p>
+          </div>
+          <div class="events-carousel">
+            <div class="carousel-cell">
+              <div class="box reveal up">
+                  <div class="box-content1">
+                    <div class="title">
+                      <h4>Fantastic 4</h4>
+                      <hr class="horizontal-line">
+                      <p>Perfect Package for a family of 4.</p>
+                      <a href="pages/promotion.html" class="a-style1">Details<i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="box reveal up">
+                  <div class="box-content2">
+                    <div class="title">
+                      <h4>Dar+Ling</h4>
+                      <hr class="horizontal-line">
+                      <p>Perfect for Adventure Couples.</p>
+                      <a href="pages/promotion.html" class="a-style1">Details<i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="box reveal up">
+                  <div class="box-content3">
+                    <div class="title">
+                      <h4>Supreme Golf</h4>
+                      <hr class="horizontal-line">
+                      <p>The ultimate golf Package.</p>
+                      <a href="pages/promotion.html" class="a-style1">Details<i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="box reveal up">
+                  <div class="box-content4">
+                    <div class="title">
+                      <h4>A Day Of Relaxation</h4>
+                      <hr class="horizontal-line">
+                      <p>Perfect Package for a family of 4.</p>
+                      <a href="pages/promotion.html" class="a-style1">Details<i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="box reveal up">
+                <div class="box-content5">
+                  <div class="title">
+                    <h4>Grand Museum tour</h4>
+                    <hr class="horizontal-line">
+                    <p>Perfect for Adventure Couples.</p>
+                    <a href="pages/promotion.html" class="a-style1">Details<i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="box reveal up">
+                <div class="box-content6">
+                  <div style="width: 100%;display: inline-block; margin-bottom: 10px;">
+                    <a href="pages/promotion.html" class="a-style1" style="margin-top: 0px;">View All<i class="fa-solid fa-arrow-right"></i></i></a>
+                  </div>
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section6" onclick="dismissBookingForm()">
+        <div class="wrapper reveal up">
+          <div class="reveal right">
+            <img src="resources/images/golf-course.jpeg" alt="image">
+            <article>
+              <h4 class="section-subheading"><i class="fa-solid fa-golf-ball-tee"></i> Hole in one</h4>
+              <h1 class="section-title">Classique Golf</h1>
+              <hr class="horizontal-line">
+              <p class="section-sub-title">Our Classic Course Revels In Its Reputation As One Of The Most Difficult golf Course in the world, Due To Its Formidable Challenge, The Classique Unfolds Over Hilly Terrain. This Activity Is Only For 16 Years Old And Above.</p>
+              <div style="display:inline-block; width:100%">
+                <a href="pages/promotion.html" class="a-style1">Details<i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+              <a href="pages/Promotion_Golf.html" class="a-button1">Book Now</a>
+            </article>
+          </div>
+          <div class="reveal left">
+            <img src="resources/images/snorkel.png" alt="image">
+            <article>
+              <h4 class="section-subheading"><i class="fa-solid fa-water"></i> Explore the reefs</h4>
+              <h1 class="section-title">Reef Snorkeling</h1>
+              <hr class="horizontal-line">
+              <p class="section-sub-title">Float weightlessly among all the colorful creatures that make this beautiful reef their home. Because of its relatively shallow depth, the reef is a great dive site for divers.</p>
+              <div style="display:inline-block; width:100%">
+                <a href="pages/promotions.html" class="a-style1">Details<i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+              <div class="btn-container">
+                <a href="pages/promotions.html" class="a-button1">Book Now</a>
+              </div>
+            </article>
+          </div>
+          <div class="reveal right">
+            <img src="resources/images/sailing.jpg" alt="image">
+            <article>
+              <h4 class="section-subheading"><i class="fa-solid fa-wind"></i> Feel the wind</h4>
+              <h1 class="section-title">Wind Sailing</h1>
+              <hr class="horizontal-line">
+              <p class="section-sub-title">The sea is calling. We offer stunning day sails to pristine turquoise waters, and our concierge will also arrange unforgettable night sails accompanied by your favorite wine.</p>
+              <div style="display:inline-block; width:100%">
+                <a href="pages/promotions.html" class="a-style1">Details<i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+              <a href="pages/promotions.html" class="a-button1">Book Now</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
     </body>
  </html>
