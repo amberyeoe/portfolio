@@ -1,9 +1,7 @@
 //navbar
 var navbar = document.getElementById("myTopnav");
 var logo = document.getElementById("navLogo");
-var sidebtn = document.getElementById("sideBtn");
 var account = document.getElementById("account");
-var form = document.getElementById("bookForm");
 var indicator = document.getElementById("indicator");
 
 var firstLoad = true;
@@ -11,7 +9,6 @@ var firstLoad = true;
 // if scroll down, hide book form
 if (window.innerWidth > 1000){
   form.classList.add("show-form");
-  sidebtn.classList.add("btn-active");
 }
 
 // responsive navbar menu
@@ -33,13 +30,8 @@ window.onscroll = function() {
     form.classList.add("alt-color");
     indicator.classList.add("to-top");
 
-    if (firstLoad) {
-      firstLoad = false;
-      form.classList.remove("show-form");
-      sidebtn.classList.remove("btn-active");
-    }
 
-    logo.src = "resources/images/logov2_black.png";
+    logo.src = "resources/icons/nameicon_black.png";
     account.src = "resources/images/user_black.png";
   }
   else {
@@ -48,21 +40,11 @@ window.onscroll = function() {
     indicator.classList.remove("to-top");
     form.classList.add("alt-color");
 
-    logo.src = "resources/images/logov2_white.png";
+    logo.src = "resources/icons/nameicon_whiteword_clear.png";
     account.src = "resources/images/user_white.png";
   }
 }
 
-// Show the book now form
-function displayBookingForm() {
-  if (!form.className.includes("show-form")) {
-    form.classList.add("show-form");
-    sidebtn.classList.add("btn-active");
-  } else {
-    form.classList.remove("show-form");
-    sidebtn.classList.remove("btn-active");
-  }
-}
 
 // Dismiss form behaviour
 function dismissBookingForm(){
@@ -134,3 +116,21 @@ var flkty = new Flickity( events, {
   prevNextButtons: false,
   pageDots: false,
 });
+
+
+ // Animation function
+ function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("animate");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
