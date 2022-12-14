@@ -1,15 +1,9 @@
 //navbar
 var navbar = document.getElementById("myTopnav");
 var logo = document.getElementById("navLogo");
-var account = document.getElementById("account");
 var indicator = document.getElementById("indicator");
 
 var firstLoad = true;
-
-// if scroll down, hide book form
-if (window.innerWidth > 1000){
-  form.classList.add("show-form");
-}
 
 // responsive navbar menu
 function displayNav() {
@@ -26,31 +20,19 @@ function displayNav() {
 window.onscroll = function() {
   if (window.pageYOffset >= 250) {
     navbar.classList.add("sticky");
-    sidebtn.classList.add("alt-color");
-    form.classList.add("alt-color");
     indicator.classList.add("to-top");
 
-
-    logo.src = "resources/icons/nameicon_black.png";
-    account.src = "resources/images/user_black.png";
+    logo.src = "portfolio/resources/icons/namelogo_black.png";
   }
   else {
     navbar.classList.remove("sticky");
-    sidebtn.classList.remove("alt-color");
     indicator.classList.remove("to-top");
-    form.classList.add("alt-color");
 
-    logo.src = "resources/icons/nameicon_whiteword_clear.png";
-    account.src = "resources/images/user_white.png";
+    logo.src = "portfolio/resources/icons/namelogo_whiteword_clear.png";
+
   }
 }
 
-
-// Dismiss form behaviour
-function dismissBookingForm(){
-  form.classList.remove("show-form");
-  sidebtn.classList.remove("btn-active");
-}
 
 // Action button behaviour
 function scrollAction(){

@@ -1,13 +1,19 @@
 .topnav {
     position: absolute;
-      font-family: 'LibreBodoni-Regular' !important;
+    font-family: 'LibreBodoni-Regular' !important;
     left: 0;
     top: 0;
     width: 100%;
-      padding: 20px 0;
+    padding: 20px 0;
     overflow: hidden;
-    background-color: transparent;
+    background-color: lightblue;
     z-index: 99;
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 5%);
+    animation: slide 0.3s ease-in-out;
+  }
+
+  .sticky{
+    position: fixed;
   }
   
   .active {
@@ -24,23 +30,11 @@
       color: white !important;
   }
   
-  .sticky {
-    position: fixed;
-    top: 0;
-      box-shadow: 0px 5px 15px rgb(0 0 0 / 5%);
-    background-color: white;
-    animation: slide 0.3s ease-in-out;
-  }
-  
-  .sticky a {
+  .topnav .nav-items button {
     color: black !important;
   }
   
-  .sticky .nav-items button {
-    color: black !important;
-  }
-  
-  .sticky.container.nav-items.dropdown .dropdown-content {
+  .topnav.container.nav-items.dropdown .dropdown-content {
     animation: none;
   }
   
@@ -85,15 +79,17 @@
   .topnav a {
     float: left;
     display: block;
-    color: white;
+    color: black !important;
     text-align: center;
     padding: 12px 14px;
     text-decoration: none;
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 1px;
-      transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
+  
+
   
   .dropdown .dropbtn {
     font-size: 13px;
@@ -146,7 +142,7 @@
       padding-left: 25px;
   }
   
-  .topnav a:hover:not(.active), .dropdown:hover .dropbtn {
+  .topnav a:hover:not(.active), .dropdown:hover .dropbtn { /*color when hovered*/
     color: #aa8453 !important;
   }
   
