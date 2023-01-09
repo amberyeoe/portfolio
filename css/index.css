@@ -1,0 +1,23 @@
+header{
+  text-align: center;
+  margin-top: 230px;
+  margin-bottom: 230px;
+}
+
+header h1{
+    font-family: 'LibreBodoni-Regular';
+    font-weight: 100;
+    font-size: 60px;
+    display: inline-block;
+}
+
+header .name{
+    padding-left: 10px;
+    color: #ffae37;
+}
+
+header p{
+    padding-top: 20px;
+    font-size: large;
+}
+

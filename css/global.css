@@ -32,7 +32,7 @@
 }
 
 *::selection{
-   background-color: #BB9C75;
+   background-color: #FFAE37;
    color:white;
 }
 
@@ -46,7 +46,7 @@
 }
 
 ::-webkit-scrollbar-thumb{
- background-color: #BB9C75;
+ background-color: #f8c57c;
 }
 
 /* Better Font Rendering ===========
@@ -69,13 +69,13 @@
 .ti-angle-down:before {
   content: "\e64b";
 }
-.fa-facebook:hover {
+.socials .fa-facebook:hover {
   color: #4866AB !important;
 }
-.fa-twitter:hover {
-  color: #1CA0F2 !important;
+.socials .fa-linkedin:hover {
+  color:  #0072b1 !important;
 }
-.fa-instagram:hover {
+.socials .fa-instagram:hover {
   color: #E84858 !important;
 }
 
@@ -302,50 +302,42 @@ header{
  animation: fade 1s ease-in-out;
 }
 
-.star-rating {
- position: relative;
- display: inline-block;
- width: 0;
- height: 0;
- margin-left: 0.9em;
- margin-right: 0.9em;
- margin-bottom: 2em;
- border-right: 0.3em solid transparent;
- border-bottom: 0.7em solid #aa8453;
- border-left: 0.3em solid transparent;
- /* Controlls the size of the stars. */
- font-size: 8px;
-}
-
-.star-rating:before, .star-rating:after {
- content: "";
- display: block;
- width: 0;
- height: 0;
- position: absolute;
- top: 0.6em;
- left: -1em;
- border-right: 1em solid transparent;
- border-bottom: 0.7em solid #aa8453;
- border-left: 1em solid transparent;
- transform: rotate(-35deg);
-}
-.star-rating:after {
- transform: rotate(35deg);
-}
 
 /* footer starts */
 .footer {
- background-color: #F5EFE8;
- display: inline-block;
+ background-color: #fff3e2 !important;
  width: 100%;
- text-align: left !important;
+ height: 315px;
+ text-align: center;
 }
 
 .footer .container {
- padding-top: 80px;
+ padding-top: 40px;
  padding-bottom: 0px;
- display: inline-block;
+}
+
+.footer .fa-brands{
+  color: #BAB2B5;
+  font-size: 25px;
+  padding-right: 10px;
+  text-align: left;
+}
+
+.footer .fas{
+  color: #FFAE37;
+  width:100px;
+}
+
+.footer .info{
+  margin-bottom: 40px;
+}
+
+.footer .email{
+  padding-bottom: 10px;
+}
+
+.footer-header{
+  display: inline !important;
 }
 
 .footer section {
@@ -357,6 +349,13 @@ header{
  width: 100%;
  color: white;
  display: inline-block;
+ width: 365px;
+ height: 50px;
+ vertical-align: top;
+}
+
+.footer .socials{
+  padding-left: 20px;
 }
 
 .footer h3 {
@@ -367,124 +366,24 @@ header{
 .footer p {
  font-size: 15px;
  color: dimgray;
- padding-bottom: 12px;
-}
-
-.footer .box a {
- color: dimgray;
- padding-top: 10px;
- display: inline-block;
- width: 45%;
- float: left;
- font-size: 15px;
- transition: all 0.3s ease-in-out;
- text-align: left !important;
-}
-
-.footer .box a:hover {
- padding-left: 5px;
- color: #aa8453;
-}
-
-.footer .box a:hover .ti-angle-right {
- opacity: 1;
- padding-left: 5px;
-}
-
-.footer .box .ti-angle-right {
- font-size: 13px;
- font-weight: bold;
+ padding-bottom: 10px;
 }
 
 .footer .box img {
- width: 220px;
+ width: 180px;
  margin-bottom: 10px;
 }
 
-.footer .box input {
- margin-top: 10px;
- padding: 10px;
- font-size: 15px;
- width: 60%;
- float: left;
-}
-
-.footer .box.newsletter button {
- float: left;
- margin: 10px;
- background-color: transparent;
- transition: all 0.4s ease-in-out;
-}
-.footer .box.newsletter button:hover {
- margin-left: 20px;
-}
-
-.footer section:nth-child(1) p {
- width: 80%;
-}
-
-.footer section:nth-child(1) i {
- font-size: 25px;
- color: #aa8453;
- float: left;
- text-align: left;
- margin-right: 18px;
- margin-bottom: 25px;
- margin-top: 8px;
- cursor: pointer;
- transition: all 0.3s ease-in-out;
-}
-
-.footer section:nth-child(2) .box {
- margin-bottom: 40px;
-}
-
-.footer section:nth-child(3) i {
- font-size: 28px;
- width: 30px;
- color: #aa8453;
- float: left;
- text-align: left;
- margin-right: 20px;
-}
-
-.footer section:nth-child(3) p {
- margin-bottom: 10px;
- width: 80%;
- text-align: left;
- float: left;
-}
-
-.footer section:nth-child(3) h3 {
- text-align: left;
- width: 80%;
- float: left;
+.footer .container{
+  display: block !important; 
 }
 
 .footer hr {
- width: 100%;
- height: 1px;
- background-color: lightgray;
- display: inline-block;
-}
-
-.footer .tc {
- width:100%;
- text-align: center;
- color: darkgray;
- padding: 20px;
- padding-bottom: 0px;
-}
-
-.footer .tc a {
- width:100%;
- text-align: center;
- color: darkgray;
- transition: all 0.3s ease-in-out;
-}
-
-.footer .tc a:hover {
- color: #aa8453;
+  width: 100%;
+  height: 1px;
+  background-color: lightgray;
+  display: inline-block;
+  margin-top: 130px;
 }
 
 /* footer end */

@@ -18,17 +18,15 @@ function displayNav() {
 
 // Scrolling behaviour
 window.onscroll = function() {
-  if (window.pageYOffset >= 250) {
+  if (window.pageYOffset >= 100) {
     navbar.classList.add("sticky");
     indicator.classList.add("to-top");
 
-    logo.src = "portfolio/resources/icons/namelogo_black.png";
   }
   else {
     navbar.classList.remove("sticky");
     indicator.classList.remove("to-top");
-
-    logo.src = "portfolio/resources/icons/namelogo_whiteword_clear.png";
+;
 
   }
 }

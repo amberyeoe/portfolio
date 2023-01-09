@@ -11,7 +11,7 @@
     box-shadow: 0px 5px 15px rgb(0 0 0 / 5%);
     animation: slide 0.3s ease-in-out;
   }
-,
+
   .sticky{
     position: fixed;
   }
@@ -40,7 +40,7 @@
   
   .nav-logo {
     float: left;
-    width: 220px;
+    width: 150px;
   }
   
   .nav-items {
@@ -73,7 +73,7 @@
   
   .dropdown-content a:hover .ti-angle-right {
     opacity: 1;
-      padding-left: 5px;
+    padding-left: 5px;
   }
   
   .topnav a {
@@ -88,8 +88,6 @@
     letter-spacing: 1px;
     transition: all 0.3s ease-in-out;
   }
-  
-
   
   .dropdown .dropbtn {
     font-size: 13px;
@@ -282,14 +280,14 @@
     text-align: center;
     padding: 13px 13px 8px 13px;
     border-radius: 50%;
-    background-color: #c4ac80;
+    background-color: #f8c57c;
     transition: all 1s ease-in-out;
     animation: jump 1.5s ease-in-out;
     animation-iteration-count: infinite;
   }
   
   .scroll-indicator:hover {
-    background-color: #C4965B;
+    background-color: #FFAE37;
   }
   
   .to-top {
@@ -345,47 +343,19 @@
   }
   
   @media screen and (max-width: 380px) {
-      .book-form, .book-btn {
-      display: none;
-    }
-    .active {
-      display: block !important;
-      background-color: #aa8453;
-      color: white !important;
-    }
+     
   }
   
   @media screen and (max-height: 700px) {
-      .book-form {
-      top: 115px;
-      padding: 35px 40px;
-    }
-    .book-btn {
-      top: 135px;
-    }
+    
   }
   
   @media screen and (max-height: 600px) {
-      .book-form, .book-btn {
-      display: none;
-    }
-    .book-form {
-      right: 60px !important;
-      padding: 30px;
-    }
+    
   }
   
   @media screen and (max-width: 600px) {
-      .book-form {
-      right: 60px !important;
-      width: 330px;
-    }
-    .btn-active {
-      right: -50px !important;
-    }
-    .book-btn:hover {
-      right: -50px;
-    }
+    
   }
   
   @media screen and (max-width: 1300px) {
@@ -394,14 +364,10 @@
         padding: 12px 8px;
       }
   
-      .dropdown .dropbtn {
-        font-size: 13px;
-        padding: 12px 8px;
-      }
   }
   
   @media screen and (max-width: 1200px) {
-    .topnav a, .dropdown .dropbtn {
+    .topnav a{
       display: none;
     }
     .topnav a.icon {
@@ -421,13 +387,10 @@
     .nav-logo {
       float: none;
     }
-    .nav-items:nth-child(3) a{
-  
-    }
+
   }
   
   @media screen and (max-width: 1200px) {
-    .topnav.responsive {}
     .topnav.responsive .icon {
       position: relative;
       float: right;
@@ -444,14 +407,8 @@
       .topnav.responsive .active {
           margin: 0 !important;
       }
-    .topnav.responsive .dropdown {float: none;}
-    .topnav.responsive .dropdown-content {position: sticky;}
+    
       .topnav.responsive .nav-items {display: block; animation: fade 0.5s}
-    .topnav.responsive .dropdown .dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-      color: white;
-    }
+ 
   }
   
