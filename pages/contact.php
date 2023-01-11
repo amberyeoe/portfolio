@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../resources/icons/a-logo.png">
+    <link rel="icon" href="../resources/a-logo.png">
     <title>Amber Yeo En Portfolio</title>
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/index.css">
@@ -15,22 +15,19 @@
     <nav class="topnav" id="myTopnav">
         <div class="container">
           <a href="../index.html" style="padding:0; display:inline">
-            <img src="../resources/icons/namelogo.jpg" alt="Logo" class="nav-logo" id="navLogo">
+            <img src="../resources/namelogo.png" alt="Logo" class="nav-logo" id="navLogo">
           </a>
           <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
           <div class="nav-items">
             <a href="../index.html">home</a>
-            <a href="projects.html">Projects</a>                      
+            <a href="../index.html#project">Projects</a>                      
             <a href="contact.html">Contact</a>
-            
-            </div>
           </div>
         </div>
         <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
           <i class="ti-angle-down"></i>
         </div>
-        
-        
+                
         <script type="text/javascript" src="../js/portfolio.js"></script>
       </nav>
       
@@ -38,39 +35,53 @@
         <h1>Contact Me</h1>
       </header>
 
+      <section>
+        <form action="done.php" method="post">
+          Name: <input type="text" name="name"><br>
+          E-mail: <input type="text" name="email"><br>
+          <input type="submit">
+          </form>
+      </section>
+
       <footer class="footer">
         <div class="container">
+
+          <div class="box footer-left">
+            <img src="../resources/namelogo.png"/>
+            <div class="socials">
+              <a href="https://www.linkedin.com/in/amber-yeo-51a4b2242/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://instagram.com/amberyeoe?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>                 
           <div class="box">
-            
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-instagram"></i>
-         </div>
-          <section>
-            <div class="box">
-               <i class="fas fa-envelope"></i>
-               <h3>Email</h3>
-               <p>amberyeo21@gmail.com</p>
+            <div class="email">
+              <div class="footer-header">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+              </div>
+              <p>amberyeo21@gmail.com</p>
             </div>
-            
-            <div class="box">
-               <i class="fas fa-phone"></i>
-               <h3>Contact</h3>
-               <p>+65-91717374</p>
+          
+            <div class="contact">
+              <div class="footer-header">
+                <i class="fas fa-phone"></i>
+                <h3>Contact</h3>
+              </div>
+              <p>+65-91717374</p>
             </div>
-          </section>
+          </div>
+          
           <hr>
         </div>
         <section style="width:100%;">
-         <div class="container" style="padding: 10px;">
+         <div class="copyright" style="padding: 10px;">
           
            <div style="width:100%; padding: 20px; text-align: center">
-             <p>Copyright 2022 &copy; Amber Yeo | All right reserved.</p>
+             <p>Copyright 2022 &copy; Amber Yeo | All rights reserved.</p>
            </div>
          </div>
         </section>
      </footer>
-     <script src="../js/flickity.pkgd.min.js"></script>
      <script src="../js/portfolio.js"></script>
 
    </body>

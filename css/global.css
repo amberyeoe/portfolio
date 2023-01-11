@@ -69,13 +69,13 @@
 .ti-angle-down:before {
   content: "\e64b";
 }
-.socials .fa-facebook:hover {
+.fa-facebook:hover {
   color: #4866AB !important;
 }
-.socials .fa-linkedin:hover {
+.fa-linkedin:hover {
   color:  #0072b1 !important;
 }
-.socials .fa-instagram:hover {
+.fa-instagram:hover {
   color: #E84858 !important;
 }
 
@@ -100,6 +100,10 @@ body {
 
 header{
   margin-top: 100px;
+}
+
+section{
+  margin: 100px;
 }
 
 .button-style1 {
@@ -239,7 +243,7 @@ header{
  width: 40%;
  height: 1px;
  display: inline-block;
- background-color: #aa8453;
+ background-color: #FFAE37;
  margin: 30px 0px;
 }
 
@@ -263,7 +267,7 @@ header{
  font-family: 'LibreBodoni-Regular';
  font-weight: 100;
  text-transform: uppercase;
- color: #aa8453;
+ color: #FFAE37;
  letter-spacing: 1px;
  font-size: 16px;
  margin-bottom: 12px;
@@ -307,7 +311,6 @@ header{
 .footer {
  background-color: #fff3e2 !important;
  width: 100%;
- height: 315px;
  text-align: center;
 }
 
@@ -340,18 +343,16 @@ header{
   display: inline !important;
 }
 
-.footer section {
-  float: left;
-  width: 33.33%;
-}
-
 .footer .box {
  width: 100%;
- color: white;
  display: inline-block;
  width: 365px;
- height: 50px;
+ height: 100px;
  vertical-align: top;
+}
+
+.footer-left{
+  height: 120px!important;
 }
 
 .footer .socials{
@@ -383,7 +384,7 @@ header{
   height: 1px;
   background-color: lightgray;
   display: inline-block;
-  margin-top: 130px;
+  margin-top: 75px;
 }
 
 /* footer end */
@@ -457,11 +458,7 @@ header{
 }
 
 @media screen and (max-width: 900px) {
- .footer section:nth-child(2) .box{
-   float: left;
-   width: 100%;
-   margin-bottom: 20px;
- }
+ 
 }
 
 @media screen and (max-width: 850px) {
@@ -477,20 +474,14 @@ header{
     padding: 0px;
     padding-bottom: 50px;
  }
- .footer section:nth-child(3) .box {
-   width: 50%;
-   float: left;
- }
+ 
  .footer .box a {
    width: 30%;
  }
 }
 
 @media screen and (max-width: 600px) {
- .footer section:nth-child(3) .box {
-   width: 100%;
-   float: left;
- }
+ 
  .footer .box a {
    width: 40%;
  }

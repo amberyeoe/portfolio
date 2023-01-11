@@ -21,3 +21,75 @@ header p{
     font-size: large;
 }
 
+.section-title{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+/* about me section */
+
+.aboutme .container{
+    height: 420px;
+}
+
+.aboutme article{
+    float: right;
+    width: 55%;
+    
+}
+
+.aboutme aside{
+    float:left;
+    width: 45%;
+    padding: auto;
+}
+
+.aboutme img{
+    width:70%;
+}
+
+/* skills section */
+
+.skills .container{
+    width:80%;
+    display:flex;
+    justify-content: space-evenly;
+    gap:3em 9em;
+    flex-wrap: wrap;
+}
+
+.skills img{
+    width:100px;
+    height: 140px;
+}
+
+/* projects section */
+
+.project .container{
+    height: 300px;
+}
+
+.project article{
+    float: right;
+    width: 50%;
+    
+}
+
+.project aside{
+    float:left;
+    width: 45%;
+    padding: auto;
+}
+
+.project img{
+    width:100%;
+}
+
+.link{
+    color: #ffae37;
+}
+
+.link:hover{
+    text-decoration: underline;
+}

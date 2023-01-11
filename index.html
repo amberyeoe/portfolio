@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="resources/icons/a-logo.png">
+    <link rel="icon" href="resources/a-logo.png">
     <title>Amber Yeo En Portfolio</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/index.css">
@@ -15,22 +15,19 @@
     <nav class="topnav" id="myTopnav">
         <div class="container">
           <a href="index.html" style="padding:0; display:inline">
-            <img src="resources/icons/namelogo.jpg" alt="Logo" class="nav-logo" id="navLogo">
+            <img src="resources/namelogo.png" alt="Logo" class="nav-logo" id="navLogo">
           </a>
           <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
           <div class="nav-items">
             <a href="index.html">home</a>
-            <a href="pages/projects.html">Projects</a>                      
-            <a href="pages/contact.html">Contact</a>
-            
-            </div>
+            <a href="#project">Projects</a>                      
+            <a href="pages/contact.php">Contact</a>            
           </div>
         </div>
         <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
           <i class="ti-angle-down"></i>
         </div>
-        
-        
+              
         <script type="text/javascript" src="js/portfolio.js"></script>
       </nav>
       
@@ -41,11 +38,62 @@
       </header>
 
       <section class="aboutme">
+        <div class="container">
+          <aside>
+            <img src="resources/profile.jpg">
+          </aside>
 
+          <article>
+            <h2 class="section-title">About me</h2>
+            <p>hello</p>
+          </article>
+        </div>
       </section>
 
       <section class="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="container">
+          <img src="resources/html.png">
+           <img src="resources/css.png">
+           <img src="resources/javascript.png">
+           <img src="resources/python.png">
+           <img src="resources/powerbi.png">
+           <img src="resources/oracle.png">
+           <img src="resources/sql.png">
+          </div>
+      </section>
 
+      <section id="project" class="project">
+        <h2 class="section-title">Projects</h2>
+        <div class="container">
+
+          <aside>
+            <img src="resources/uxd.jpg">
+          </aside>
+          <article class="uxd">
+            <p>Website</p>
+            <a href="https://letimelesstresor.netlify.app/" class="link">Website Link</a>
+          </article>
+        </div>
+        
+        <div class="container">
+          <aside>
+            <img src="resources/srm.jpg">
+          </aside>
+          <article class="srm">
+            <p>report</p>
+            <a href="resources/Statistical Report.docx.pdf" class="link" download>Click here for report pdf</a>
+          </article>
+        </div>
+
+        <div class="container">
+          <aside>
+            <img src="">
+          </aside>
+          <article class="vap">
+
+          </article>
+        </div>
       </section>
 
       <section class="testimonal">
@@ -55,9 +103,9 @@
       <footer class="footer">
         <div class="container">
 
-          <div class="box">
-            <img src="resources/icons/namelogo-clear.png">
-            <div class="box socials"> <!--idk why cant link the socials-->
+          <div class="box footer-left">
+            <img src="resources/namelogo.png"/>
+            <div class="socials">
               <a href="https://www.linkedin.com/in/amber-yeo-51a4b2242/"><i class="fa-brands fa-linkedin"></i></a>
               <a href="https://instagram.com/amberyeoe?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
             </div>
@@ -81,9 +129,9 @@
           </div>
           <hr>
         </div>
-        <section style="width:100%;">
+
+        <section style="width:100%;margin:0px;">
          <div class="copyright" style="padding: 10px;">
-          
            <div style="width:100%; padding: 20px; text-align: center">
              <p>Copyright 2022 &copy; Amber Yeo | All rights reserved.</p>
            </div>

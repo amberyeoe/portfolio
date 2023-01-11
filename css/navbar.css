@@ -18,7 +18,7 @@
   
   .active {
     display: none !important;
-      border: 2px solid #aa8453;
+      border: 2px solid #FFAE37;
       border-radius: 4px;
       padding: 10px 14px !important;
       margin: 0px 14px;
@@ -26,7 +26,7 @@
   }
   
   .active:hover {
-      background-color: #aa8453;
+      background-color: #FFAE37;
       color: white !important;
   }
   
@@ -41,6 +41,7 @@
   .nav-logo {
     float: left;
     width: 150px;
+    padding-top: 6px;
   }
   
   .nav-items {
@@ -55,7 +56,7 @@
   
   .ti-angle-right {
       opacity: 0;
-      color: #aa8453;
+      color: #FFAE37;
       padding-left: 2px;
       font-size: 10px;
       font-weight: bold;
@@ -64,7 +65,7 @@
   
   .ti-angle-left {
       opacity: 0;
-      color: #aa8453;
+      color: #FFAE37;
       padding-right: 2px;
       font-size: 10px;
       font-weight: bold;
@@ -141,7 +142,7 @@
   }
   
   .topnav a:hover:not(.active), .dropdown:hover .dropbtn { /*color when hovered*/
-    color: #aa8453 !important;
+    color: #FFAE37 !important;
   }
   
   .dropdown:hover .dropdown-content {
@@ -178,7 +179,7 @@
   }
   
   .book-form h4 {
-    color: #aa8453;
+    color: #FFAE37;
     font-weight: normal;
     font-family: 'LibreBodoni-Regular';
   }
@@ -214,7 +215,7 @@
   
   .book-btn:hover p{
     right: -35px;
-    color: #aa8453;
+    color: #FFAE37;
   }
   
   .btn-active .book-arrow{
