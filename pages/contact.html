@@ -6,7 +6,7 @@
     <link rel="icon" href="../resources/a-logo.png">
     <title>Amber Yeo En Portfolio</title>
     <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/contacts.css">
     <link rel="stylesheet" href="../css/flickity.css" media="screen">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="../css/navbar.css">
@@ -32,15 +32,21 @@
       </nav>
       
       <header>
-        <h1>Contact Me</h1>
+        
       </header>
 
       <section>
-        <form action="done.php" method="post">
-          Name: <input type="text" name="name"><br>
-          E-mail: <input type="text" name="email"><br>
-          <input type="submit">
-          </form>
+        <form action="https://formsubmit.co/amberyeo21@gmail.com" method="POST">
+          <h1>Contact Me</h1>
+          <input type="text" name="name" id="name" placeholder="Your Name" required>
+          <input type="text" name="phone" id="phone" placeholder="Phone Number" required>
+          <input type="email" name="email" id="email" placeholder="Email Address" required>
+          <textarea id="message" name="message" rows="4" placeholder="Comments"></textarea>
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="contact.html">
+          <button type="submit" class="button-style" onclick="confirm()">Send</button>
+        </form>
+          
       </section>
 
       <footer class="footer">
@@ -73,16 +79,16 @@
           
           <hr>
         </div>
-        <section style="width:100%;">
-         <div class="copyright" style="padding: 10px;">
-          
-           <div style="width:100%; padding: 20px; text-align: center">
-             <p>Copyright 2022 &copy; Amber Yeo | All rights reserved.</p>
-           </div>
-         </div>
-        </section>
-     </footer>
-     <script src="../js/portfolio.js"></script>
+        <section style="width:100%;margin:0px;">
+          <div class="copyright" style="padding: 10px;">
+            <div style="width:100%; padding: 20px; text-align: center">
+              <p>Copyright 2022 &copy; Amber Yeo | All rights reserved.</p>
+            </div>
+          </div>
+         </section>
+      </footer>
 
+     <script src="../js/portfolio.js"></script>
+      
    </body>
  </html>

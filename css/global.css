@@ -106,45 +106,12 @@ section{
   margin: 100px;
 }
 
-.button-style1 {
+.button-style{
  display: block;
  padding: 0;
  border: none;
  margin: 0;
- width: 100%;
- background: #c4ac80;
- color: #fff;
- font-size: 15px;
- text-decoration: none;
- padding: 20px;
- position: relative;
- cursor: pointer;
- transition: all 0.3s ease-out;
- letter-spacing: 3px;
- text-transform: uppercase;
-}
-
-.button-style1:hover, .button-style2:hover {
- background: #9e7a4c;
-}
-
-.button-style1:hover .ti-angle-right, .button-style2:hover .ti-angle-right {
- opacity: 1;
- margin-right: -10px;
-}
-
-.button-style1 .ti-angle-right, .button-style2 .ti-angle-right {
- color: white;
- font-size: 12px;
- font-weight: bold;
-}
-
-.button-style2 {
- display: block;
- padding: 0;
- border: none;
- margin: 0;
- background: #c4ac80;
+ background: #f8c57c;
  color: #fff;
  font-size: 12px;
  text-decoration: none;
@@ -156,22 +123,14 @@ section{
  text-transform: uppercase;
 }
 
-.button-style3 {
+.button-style:hover {
  display: inline-block;
- padding: 1.1rem 4.3rem;
- font-size: 16px;
- border: 1px solid #b0a48d;
- color: #b0a48d;
+ padding: 15px;
+ font-size: 12px;
+ border: 1px solid #f8c57c;
+ color: #FFAE37;
  background-color: transparent;
  position: relative;
- transition: color .35s cubic-bezier(.3,.1,.3,1),background-color .35s cubic-bezier(.3,.1,.3,1);
- margin-top: 40px;
-
-}
-
-.button-style3:hover {
- background-color: #c4ac80;
- color: white;
 }
 
 .a-style1 {
