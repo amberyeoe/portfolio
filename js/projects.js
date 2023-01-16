@@ -3,6 +3,7 @@
 let uxd=document.getElementById("uxd");
 let srm=document.getElementById("srm");
 let vap=document.getElementById("vap");
+let uxd_index_btn=document.getElementById("uxd-btn")
 
 //reset category color
 function resetColor() {
@@ -62,3 +63,26 @@ function showvap(){
   uxd.classList.add("remove");
   vap.classList.add("display");
 }
+
+// $.ajax({
+//     window.location = "../pages/projects.html",
+//     success:function(){
+//     showuxd();
+//  }
+//  })
+
+function force_load_uxd() {
+    window.location = "../pages/projects.html";
+}
+
+function loadNewPage() {
+    location.assign("https://amberyeo.netlify.app/pages/projects.html");
+  }
+
+uxd_index_btn.addEventListener("click",function(){
+      
+      window.onload = function() {
+        loadNewPage();
+        window.onload = showuxd;
+      };
+})
