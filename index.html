@@ -14,14 +14,16 @@
   <body>
     <nav class="topnav" id="myTopnav">
         <div class="container">
-          <a href="index.html" style="padding:0; display:inline">
+          <a href="#home" style="padding:0; display:inline">
             <img src="resources/namelogo.png" alt="Logo" class="nav-logo" id="navLogo">
           </a>
           <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
           <div class="nav-items">
-            <a href="#header">home</a>
-            <a href="#project">Projects</a>                      
-            <a href="pages/contact.html">Contact</a>            
+            <a href="#home" class="item">home</a>
+            <a href="#project" class="item">Projects</a>                      
+            <a href="pages/contact.html"class="item">Contact</a>
+            <a href="https://www.linkedin.com/in/amber-yeo-51a4b2242/" class="t-socials"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://instagram.com/amberyeoe?igshid=YmMyMTA2M2Y=" class="t-socials"><i class="fa-brands fa-instagram"></i></a>       
           </div>
         </div>
         <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
@@ -30,8 +32,8 @@
               
         <script type="text/javascript" src="js/portfolio.js"></script>
       </nav>
-      
-      <header id="header">
+      <div id="home"></div>
+      <header>
         <h1> Hello! I'm <h1 class="name"> Amber</h1></h1>
         <p>I am currently studying in NYP Applied AI & Analytics. I am passionate<br>
         to learn and develop my coding skills to be better prepared for the work</p>
@@ -46,6 +48,7 @@
           <article>
             <h2 class="section-title">About me</h2>
             <p>hello</p>
+            <a href="resources/amberresume.pdf" class="link" download>Resume PDF</a>
           </article>
         </div>
       </section>
@@ -68,12 +71,16 @@
         <div class="container">
 
           <aside>
-            <img src="resources/uxd.jpg">
+            <img src="resources/uxd.jpg" class="uxd-img">
           </aside>
           <article class="uxd">
-            <p>Website</p>
+            <h4>Le Timeless Trésor</h4>
+            <hr class="horizontal-line">
+            <p>A Luxury Vintage hotel website</p>
+            <p>Task: To design and develop an intuitive hotel web user interface as a team using HTML, CSS and JavaScript</p>
+            <p>Module: UX Design</p>
             <a href="https://letimelesstresor.netlify.app/" class="link">Website Link</a>
-            <a href="pages/projects.html"><button class="button-style2">Learn More</button></a>
+            <a href="pages/projects.html" onclick="showuxd()"><button class="button-style2">Learn More</button></a>
           </article>
         </div>
         
@@ -82,18 +89,25 @@
             <img src="resources/srm.jpg">
           </aside>
           <article class="srm">
-            <p>report</p>
-            <a href="resources/Statistical Report.docx.pdf" class="link" download>Click here for report pdf</a>
-            <a href="pages/projects.html"><button class="button-style2">Learn More</button></a>
+            <h4>Singapore is a Good Place to live in</h4>
+            <hr class="horizontal-line">
+            <p>Task: A project where my teammates and I used statistical methods to verify or disprove our created hypothesis and sub-hypothesis</p>
+            <p>Module: Statistical Research Methods</p>
+            <a href="resources/Statistical Report.pdf" class="link" download>Report PDF</a>
+            <a href="pages/projects.html"><button class="button-style2" onclick="showsrm()">Learn More</button></a>
           </article>
         </div>
 
         <div class="container">
           <aside>
-            <img src="">
+            <img src="resources/healthcare.webp">
           </aside>
           <article class="vap">
-            <a href="pages/projects.html"><button class="button-style2">Learn More</button></a>
+            <h4>Singapore has the Best Healthcare</h4>
+            <hr class="horizontal-line">
+            <p>Task: To use data visualisation tools and techniques to visualise data insights, trends, patterns and relationships in business data and support our hypothesis</p>
+            <p>Module: Visual Analytics Project</p>
+            <a href="pages/projects.html"><button class="button-style2" onclick="showuxd()">Learn More</button></a>
           </article>
         </div>
       </section>
@@ -118,7 +132,7 @@
                 <i class="fas fa-envelope"></i>
                 <h3>Email</h3>
               </div>
-              <p>amberyeo21@gmail.com</p>
+              <p>Amberyeo21@gmail.com</p>
             </div>
           
             <div class="contact">
@@ -142,6 +156,6 @@
      </footer>
      <script src="js/flickity.pkgd.min.js"></script>
      <script src="js/portfolio.js"></script>
-
+     <script src="js/projects.js"></script>
    </body>
  </html>

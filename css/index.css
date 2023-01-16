@@ -1,7 +1,12 @@
+#home{
+    top:0;
+}
+
 header{
   text-align: center;
-  padding-top: 140px;
-  padding-bottom: 160px;
+  padding-top: 230px;
+  padding-bottom: 130px;
+  margin: 0;
 }
 
 header h1{
@@ -9,6 +14,10 @@ header h1{
     font-weight: 100;
     font-size: 60px;
     display: inline-block;
+}
+
+header p{
+    text-transform: capitalize;
 }
 
 header .name{
@@ -89,6 +98,10 @@ header p{
 
 .project img{
     width:100%;
+}
+
+aside .uxd-img{
+    padding: 20px 0;
 }
 
 .link{

@@ -31,7 +31,6 @@ window.onscroll = function() {
   }
 }
 
-
 // Action button behaviour
 function scrollAction(){
   if (window.pageYOffset >= 300){
@@ -39,18 +38,6 @@ function scrollAction(){
   } else {
     window.scrollTo(0, window.innerHeight - navbar.clientHeight);
   }
-}
-
-// Room Selector
-function displayRoom(element){
-  boxes = document.querySelectorAll('.room-selector .box');
-  for (const box of boxes) {
-    box.classList.remove('selected');
-  }
-
-  element.classList.add('selected');
-  document.getElementById('roomImage').src ="resources/images/galleryimg"+ element.id +".jpg";
-
 }
 
 // Carousel
@@ -119,3 +106,4 @@ window.addEventListener("scroll", reveal);
  function confirm(){
   alert("Your message has been sent! Thank You!")
  }
+

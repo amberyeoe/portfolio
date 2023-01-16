@@ -6,7 +6,7 @@
     <link rel="icon" href="../resources/a-logo.png">
     <title>Amber Yeo En Portfolio</title>
     <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/projects.css">
     <link rel="stylesheet" href="../css/flickity.css" media="screen">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="../css/navbar.css">
@@ -15,13 +15,15 @@
     <nav class="topnav" id="myTopnav">
         <div class="container">
           <a href="../index.html" style="padding:0; display:inline">
-            <img src="../resources/namelogo.jpg" alt="Logo" class="nav-logo" id="navLogo">
+            <img src="../resources/namelogo.png" alt="Logo" class="nav-logo" id="navLogo">
           </a>
           <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
           <div class="nav-items">
-            <a href="../index.html">home</a>
-            <a href="../index.html#project">Projects</a>                      
-            <a href="contact.html">Contact</a>            
+            <a href="../index.html" class="item">home</a>
+            <a href="../index.html#project" class="item">Projects</a>                      
+            <a href="contact.html" class="item">Contact</a>   
+            <a href="https://www.linkedin.com/in/amber-yeo-51a4b2242/" class="t-socials"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://instagram.com/amberyeoe?igshid=YmMyMTA2M2Y=" class="t-socials"><i class="fa-brands fa-instagram"></i></a>           
           </div>
         </div>
         <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
@@ -32,8 +34,27 @@
       </nav>
       
       <header>
-        <h1>Projects</h1>
+        <h2>Projects</h2>
       </header>
+        <div class="container">
+          <div id="projectsNav">
+            <div onclick="showAll()" class="click" id="btn1">ALL</div>
+            <div onclick="showuxd()" class="" id="btn2">UX DESIGN</div>
+            <div onclick="showsrm()" class="" id="btn3">STATISTICAL RESEARCH METHODS</div>
+            <div onclick="showvap()" class="" id="btn4">VISUAL ANALYTICS PROJECT</div>
+          </div>
+        </div>
+      <section class="projects">
+        <div class="uxd display" id="uxd">
+          <p>hi uxd</p>
+        </div>
+        <div class="srm display" id="srm">
+          <p>hello srm</p>
+        </div>
+        <div class="vap display" id="vap">
+          <p>hellovap</p>
+        </div>
+      </section>
 
       <footer class="footer">
         <div class="container">
@@ -51,7 +72,7 @@
                 <i class="fas fa-envelope"></i>
                 <h3>Email</h3>
               </div>
-              <p>amberyeo21@gmail.com</p>
+              <p>Amberyeo21@gmail.com</p>
             </div>
           
             <div class="contact">
@@ -74,6 +95,6 @@
          </section>
       </footer>
      <script src="../js/portfolio.js"></script>
-
+     <script src="../js/projects.js"></script>
    </body>
  </html>
