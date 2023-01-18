@@ -5,6 +5,23 @@ let srm=document.getElementById("srm");
 let vap=document.getElementById("vap");
 let uxd_index_btn=document.getElementById("uxd-btn")
 
+function readurl(){
+    const queryString = window.location.search;
+    const view = queryString.split("=")[1];
+
+    if (view == "uxd"){
+        showuxd();
+    }
+    
+    else if (view == "srm"){
+        showsrm();
+    }
+
+    else if (view == "vap"){
+        showvap();
+    }
+}
+
 //reset category color
 function resetColor() {
   document.getElementById("btn1").className="";
