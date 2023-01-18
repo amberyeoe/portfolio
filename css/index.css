@@ -20,7 +20,7 @@ header p{
     text-transform: capitalize;
 }
 
-header .name{
+.name{
     padding-left: 10px;
     color: #ffae37;
 }
@@ -37,6 +37,14 @@ header p{
 }
 
 /* about me section */
+
+.aboutme{
+    margin: 100px 100px 0px;
+}
+
+.aboutme h2{
+    display: inline-block;
+}
 
 .aboutme .container{
     height: 420px;
@@ -58,41 +66,35 @@ header p{
     width:70%;
 }
 
-/* skills section */
-
-.skills .container{
-    width:80%;
-    display:flex;
-    justify-content: space-evenly;
-    gap:3em 9em;
-    flex-wrap: wrap;
-}
-
-.skills img{
-    width:100px;
-    height: 140px;
-}
-
 /* projects section */
 
 .project{
     padding-top:80px;
-    margin-top: 10px;
+    margin: 10px 120px 70px;
 }
 
-.project .container{
-    height: 300px;
+.project h2{
+    padding-bottom: 10px;
 }
 
-.project article{
-    float: right;
-    width: 50%;
-    
+.project .inner .container h4{
+    margin-top: 20px;
+}
+
+.project .inner{
+    width: 100%;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.project .inner .container{
+    width: 100%;
+    height: 550px;
+    padding: 20px;
 }
 
 .project aside{
-    float:left;
-    width: 45%;
+    display: block;
     padding: auto;
 }
 
@@ -101,13 +103,57 @@ header p{
 }
 
 aside .uxd-img{
-    padding: 20px 0;
+    padding: 25px 0;
 }
 
-.link{
-    color: #ffae37;
+/* skills section */
+
+.skills{
+    margin: 100px 100px 20px;
 }
 
-.link:hover{
-    text-decoration: underline;
+.skills .container{
+    width:90%;
+    display:flex;
+    justify-content: space-evenly;
+    gap:4em 5em;
+    flex-wrap: wrap;
+}
+
+.skills img{
+    width: 90px;
+    height: 100px;
+}
+
+/* achievement section */
+
+.awards{
+    padding-top:80px;
+    margin: 10px 120px 70px;
+}
+
+.awards h2{
+    padding-bottom: 10px;
+}
+
+.awards .inner .container h4{
+    margin-top: 20px;
+}
+
+.awards .container{
+    width: 100%;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.awards .container .award{
+    width: 100%;
+    height: 550px;
+    padding: 20px;
+}
+
+.awards img{
+    display: block;
+    padding: auto;
+    width:100%;
 }

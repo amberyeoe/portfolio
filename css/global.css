@@ -131,6 +131,14 @@ p{
   padding-bottom: 7px;
 }
 
+.link{
+  color: #ffae37;
+}
+
+.link:hover{
+  text-decoration: underline;
+}
+
 .button-style{ /*for normal buttons */
  display: block;
  padding: 0;
@@ -162,10 +170,10 @@ p{
   display: block;
   padding: 0;
   border: none;
-  margin: 5px 0;
+  margin: 20px 0 0;
   background: #f8c57c;
   color: #fff;
-  font-size: 10px;
+  font-size: 12px;
   text-decoration: none;
   padding: 9px;
   position: relative;
@@ -173,16 +181,16 @@ p{
   transition: all 0.3s ease-out;
   letter-spacing: 2px;
   text-transform: uppercase;
-  width: 40%;
+  width: 60%;
   font-weight: 300;
 }
 
 .button-style2:hover {
   display: block;
-  width: 40%;
+  width: 60%;
   font-weight: 300;
-  padding: 9px;
-  font-size: 10px;
+  padding: 8.6px;
+  font-size: 12px;
   border: 1px solid #f8c57c;
   color: #FFAE37;
   background-color: transparent;
@@ -191,7 +199,7 @@ p{
 
 .horizontal-line {
  width: 40%;
- height: 1px;
+ height: 1px !important;
  display: inline-block;
  background-color: #FFAE37;
  margin: 20px 0px;

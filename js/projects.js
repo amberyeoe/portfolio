@@ -27,6 +27,7 @@ function showAll() {
   resetDisplay();
   btn.classList="click" //only with this class name will the colour change
   uxd.classList.add("display"); //so that all faclities will be seen
+  uxd.classList.add("top");
   srm.classList.add("display");
   vap.classList.add("display");
 }
@@ -40,6 +41,7 @@ function showuxd(){
   srm.classList.add('remove'); //section will be removed
   vap.classList.add("remove");
   uxd.classList.add("display");
+  uxd.classList.add("top");
 }
 
 //show srm
@@ -51,6 +53,7 @@ function showsrm(){
   uxd.classList.add("remove"); //section will be removed
   vap.classList.add("remove");
   srm.classList.add("display");
+  srm.classList.add("top");
 }
 
 //show vap
@@ -62,6 +65,7 @@ function showvap(){
   srm.classList.add("remove"); //section will be removed
   uxd.classList.add("remove");
   vap.classList.add("display");
+  vap.classList.add("top");
 }
 
 // $.ajax({
@@ -75,14 +79,8 @@ function force_load_uxd() {
     window.location = "../pages/projects.html";
 }
 
-function loadNewPage() {
-    location.assign("https://amberyeo.netlify.app/pages/projects.html");
-  }
-
-uxd_index_btn.addEventListener("click",function(){
-      
-      window.onload = function() {
-        loadNewPage();
-        window.onload = showuxd;
-      };
-})
+// uxd_index_btn.addEventListener("click",function(){
+//       force_load_uxd();
+//       window.onload(showuxd());
+//       alert("r u there");
+// })

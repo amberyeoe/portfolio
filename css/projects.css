@@ -9,7 +9,7 @@
     height: 50px;
     margin-bottom: 50px;
     margin-top: 50px;
-    background-color: #FAF7F2;
+    background-color: #fff3e2;
   }
 
 #projectsNav div {
@@ -17,16 +17,16 @@
     font-size: 1.00em;
     line-height: 1em;
     text-decoration: none;
-    transition: all 0.3s ease-out;
+    transition: all 0.2s ease-out;
     cursor: pointer;
   }
   
   #projectsNav div:hover, .click {
-    border-bottom: 3px #c4ac80 solid;
+    border-bottom: 3px #FFAE37 solid;
   }
 
   #projectsNav .click{
-    border-bottom: 3px #c4ac80 solid;
+    border-bottom: 3px #FFAE37 solid;
   }
 
  .projects {
@@ -38,6 +38,22 @@
     padding-top: 30px;
   }
 
+  .proj{
+    padding-top: 0px;
+    text-align: left;
+    font-size: 37px;
+    padding-bottom: 10px;
+  }
+
+/* p{
+  padding-top: 10px;
+} */
+
+  h4{
+    padding-bottom: 20px;
+    text-decoration: underline;
+  }
+
   .projects .container{
     height: 30px;
     padding-bottom: 20px;
@@ -45,7 +61,7 @@
 
   .srm, .uxd, .vap{
     margin:0;
-    padding: 20px;
+    padding: 100px 50px 0px;
   }
 
   
@@ -53,10 +69,10 @@
     display: block !important;
 }
 
-.remove{
-    display:none !important;
+.top{
+  padding-top: 0px !important;
 }
 
-.click{
-    border-bottom: 3px #c4ac80 solid;
+.remove{
+    display:none !important;
 }
