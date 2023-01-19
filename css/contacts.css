@@ -27,7 +27,23 @@ form input, form textarea{
 
 @media screen and (max-width: 800px) {
     form{
-        padding: 0;
+        padding: 0 90px 30px;
+    }
+    form h1{
+        font-family: 'LibreBodoni-Regular';
+        font-weight: 100;
+        font-size: 35px;
+        text-align: center;
+        padding-top: 20px;
+    }
+    section{
+        margin: 30px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    form{
+        padding: 0 0 30px;
     }
     form h1{
         font-family: 'LibreBodoni-Regular';
