@@ -95,9 +95,3 @@ function showvap(){
 function force_load_uxd() {
     window.location = "../pages/projects.html";
 }
-
-// uxd_index_btn.addEventListener("click",function(){
-//       force_load_uxd();
-//       window.onload(showuxd());
-//       alert("r u there");
-// })

@@ -100,8 +100,6 @@ var flkty = new Flickity( events, {
   }
 }
 
-window.addEventListener("scroll", reveal);
-
 // contacts page
  function confirm(){
   alert("Your message has been sent! Thank You!")

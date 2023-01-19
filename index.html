@@ -7,7 +7,8 @@
     <title>Amber Yeo En Portfolio</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/flickity.css" media="screen">
+    <!-- <link rel="stylesheet" href="css/flickity.css" media="screen"> -->
+    <link rel="stylesheet" href="css/flickity.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/navbar.css">
   </head>
@@ -20,7 +21,8 @@
           <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
           <div class="nav-items">
             <a href="#home" class="item">home</a>
-            <a href="#project" class="item">Projects</a>                      
+            <a href="#project" class="item">Projects</a> 
+            <a href="#awards" class="item">Achievements</a>                     
             <a href="pages/contact.html"class="item">Contact</a>
             <a href="https://www.linkedin.com/in/amber-yeo-51a4b2242/" class="t-socials"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://instagram.com/amberyeoe?igshid=YmMyMTA2M2Y=" class="t-socials"><i class="fa-brands fa-instagram"></i></a>       
@@ -107,44 +109,66 @@
            <img src="resources/sql.png">
            <img src="resources/linux.png">
            <img src="resources/figma.png">
-           <img src="resoudrces/git.png">
+           <img src="resources/git.png">
            <img src="resources/ubuntu.png">
            <img src="resources/github.png">
           </div>
       </section>
 
-      <section class="awards">
+      <section class="awards" id="awards">
         <h2 class="section-title">Achievements</h2>
-        <div class="container">
-          <div class="award">
-            <img src="">
-            <article>
-              <h4>AWS Build On Singapore 2022</h4>
-            </article>
+        <div class="carousel" data-flickity='{ "wrapAround": true, "draggable": false}'>
+          <div class="carousel-cell">
+              <div class="award">
+                  <aside>
+                    <img src="../resources/aws.jpg" alt="">
+                  </aside>
+                  <article>
+                    <h4>AWS Build On Hackathon</h4>
+                    <h5>1st Runner Up | National University Health System</h5>
+                    <p>My first actual hackathon I've participated. It was very new to me and I had to juggle between my part time job and creating prototypes for the final presentation.
+                      It was a fulfilling and memorable experience.
+                    </p>
+                  </article>
+              </div>
           </div>
-
-          <div class="award">
-            <img src="">
-            <article>
-              <h4>Director's List AY2022 S1</h4>
-            </article>
+          <div class="carousel-cell">
+            <div class="award">
+                <aside>
+                  <img src="../resources/geekout.jpg" alt="">
+                </aside>
+                <article>
+                  <h4>GovTech GeekOut</h4>
+                  <h5>5 day Bootcamp</h5>
+                  <p>Multiple workshops and a hackathon to introduce me into the different areas in information technology. Collaborated with different people from JCs and Polytechics, 
+                    with different skillsets to create an idea and prototype for the hackathon. </p>
+                </article>
+            </div>
           </div>
-
-          <div class="award">
-            <img src="">
-            <article>
-              <h4>GovTech Geek Out</h4>
-              <p>A Bootcamp 2022</p>
-            </article>
+          <div class="carousel-cell">
+            <div class="award">
+                <aside>
+                  <img src="../resources/coursera.jpg" alt="">
+                </aside>
+                <article>
+                  <h4>UX Design Coursera</h4>
+                  <h5>Google</h5>
+                  <p>Completed 2 online courses on UX Design over the semester break</p>
+                </article>
+            </div>
           </div>
-
-          <div class="award">
-            <img src="">
-            <article>
-              <h4>UX Design Coursera</h4>
-            </article>
+          <div class="carousel-cell">
+            <div class="award">
+                <aside>
+                  <img src="../resources/geekout.jpg" alt="">
+                </aside>
+                <article>
+                  <h4>Director's List AY2022S1</h4>
+                  <h5>Top 15% of Cohort</h5>
+                  <p>Adapted to the new environment and put my best foot forward in whatever I did.</p>
+                </article>
+            </div>
           </div>
-
         </div>
       </section>
 
@@ -191,6 +215,7 @@
         </section>
      </footer>
      <script src="js/flickity.pkgd.min.js"></script>
+     <script src="js/flickity.js"></script>
      <script src="js/portfolio.js"></script>
      <script src="js/projects.js"></script>
    </body>
