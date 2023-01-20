@@ -36,15 +36,15 @@
       </header>
 
       <section>
-        <form action="https://formsubmit.co/amberyeo21@gmail.com" method="POST">
+        <form action="https://formsubmit.co/amberyeo21@gmail.com" method="POST" onsubmit="confirm()">
           <h1>Contact Me</h1>
           <input type="text" name="name" id="name" placeholder="Your Name" required>
           <input type="text" name="phone" id="phone" placeholder="Phone Number" required>
           <input type="email" name="email" id="email" placeholder="Email Address" required>
           <textarea id="message" name="message" rows="4" placeholder="Comments"></textarea>
           <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://amberyeo.netlify.app/pages/contact.html">
-          <button type="submit" class="button-style" onclick="confirm()">Send</button>
+          <input type="hidden" name="_next" value="https://amberyeo.vercel.app/pages/contact.html">
+          <button type="submit" class="button-style">Send</button>
         </form>
           
       </section>
@@ -89,6 +89,6 @@
       </footer>
 
      <script src="../js/portfolio.js"></script>
-      
+     <!-- <script src="../js/contacts.js"></script> -->
    </body>
  </html>

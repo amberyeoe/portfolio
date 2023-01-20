@@ -101,7 +101,6 @@ var flkty = new Flickity( events, {
 }
 
 // contacts page
- function confirm(){
+function confirm(){
   alert("Your message has been sent! Thank You!")
  }
-
