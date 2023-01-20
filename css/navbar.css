@@ -181,6 +181,7 @@
     .topnav a{
       display: none;
     }
+
     .topnav a.icon {
       float: right;
       display: block;
@@ -196,6 +197,7 @@
       padding-bottom: 20px;
       display: none;
     }
+
     .nav-logo {
       float: none;
       padding-top: 8px;

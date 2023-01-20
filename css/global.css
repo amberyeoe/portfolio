@@ -346,6 +346,10 @@ p{
   margin-top: 75px;
 }
 
+.footer .phone{
+  color: dimgray !important;
+}
+
 /* footer end */
 
 @keyframes fade-right {
@@ -432,11 +436,6 @@ p{
    margin-left: auto;
  }
 
- /* .footer{
-  height: auto;
-  height: 100%;
- } */
-
  .footer section {
     float: left;
     width: 100%;
@@ -458,7 +457,7 @@ p{
    width: 40%;
  }
  .footer .container {
-   padding-top: 60px;
+   padding-top: 40px;
    padding-bottom: 0px;
  }
 }
