@@ -80,3 +80,20 @@ iframe{
 .remove{
     display:none !important;
 }
+
+@media screen and (max-width: 950px){
+  .srm, .uxd, .vap{
+    margin:0;
+    padding: 60px 30px 0px;
+  }
+  section{
+    margin: 100px 50px
+  }
+}
+
+@media screen and (max-width: 800px){
+  #projectsNav{
+    flex-direction: column;
+    height: 170px;
+  }
+}

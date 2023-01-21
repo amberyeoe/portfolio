@@ -14,10 +14,15 @@ header h1{
     font-weight: 100;
     font-size: 60px;
     display: inline-block;
+    padding-right: 5px;
+    padding-left: 10px;
 }
 
 header p{
     text-transform: capitalize;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .name{
@@ -39,11 +44,19 @@ header p{
 /* about me section */
 
 .aboutme{
-    margin: 100px 100px 0px;
+    /* margin: 100px 100px 0px; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 90%
 }
 
 .aboutme h2{
     display: inline-block;
+}
+
+.aboutme .section-title{
+    padding-bottom: 20px;
 }
 
 .aboutme .container{
@@ -52,7 +65,7 @@ header p{
 
 .aboutme article{
     float: right;
-    width: 55%;
+    width: 50%;
     
 }
 
@@ -70,7 +83,7 @@ header p{
 
 .project{
     padding-top:80px;
-    margin: 10px 120px 70px;
+    margin: 0px 120px 50px;
 }
 
 .project h2{
@@ -89,7 +102,6 @@ header p{
 
 .project .inner .container{
     width: 100%;
-    height: 550px;
     padding: 20px;
 }
 
@@ -106,29 +118,34 @@ aside .uxd-img{
     padding: 25px 0;
 }
 
-/* skills section */
-
-.skills{
-    margin: 100px 100px 0px;
-}
-
-.skills .container{
-    width:90%;
-    display:flex;
-    justify-content: space-evenly;
-    gap:4em 5em;
-    flex-wrap: wrap;
-}
-
-.skills img{
-    width: 90px;
-    height: 100px;
-}
 
 /* achievement section */
 
 .awards{
     padding-top: 80px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  /* background: #EEE; */
+  width: 100%;
+}
+
+.carousel-cell {
+  width: 32.7%;
+  height: 440px;
+  margin-right: 10px;
+  /* background-color: #8C8; */
+}
+
+.carousel-cell img{
+  width: 92%;
 }
 
 aside{
@@ -152,62 +169,142 @@ aside{
     padding-top: 10px;
 }
 
-/* .carousel{
-    width: 90%
-}  */
+/* skills section */
 
-/* .main-carousel{
-    height: 500px;
+.skills{
+    margin: 100px 100px 80px;
 }
 
-.awards{
-    padding-top: 80px;
-    margin: 10px 100px 70px;
-    height: 600px;
-}
-
-.awards h2{
-    padding-bottom: 10px;
-}
-
-.awards .inner .container h4{
-    margin-top: 20px;
-}
-
-.awards .container{
-    width: 100%;
+.skills .container{
+    width:90%;
     display:flex;
     justify-content: space-evenly;
-    padding-right: 50px;
-    padding-left: 50px;
-} */
-
-/* .awards .container .award{
-    /* width: 80px;
-    height: 90px; */
-    /* padding: 10px; }*/
-
-/* .award{
-    width: 400px;
-} */
-
-/* .awards img{
-    width:50%;
-    max-width:100%;
-    max-height:100%;
+    gap:4em 5em;
+    flex-wrap: wrap;
 }
 
-.carousel-cell{
-    width: 66%;
-    height: 200px;
-    margin-right: 10px;
+.skills img{
+    width: 90px;
+    height: 100px;
+}
+
+@media screen and (max-width: 950px){
+    .carousel-cell{
+        height: 500px;
+    }
+    .project{
+        margin: 10px 90px 70px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    header p{
+        width: 80%;
+    }
+    section{
+        margin: 40px;
+    }
+    .carousel-cell{
+        width: 38%;
+    }
+    .project{
+        margin: 10px 70px 50px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    header p{
+        width: 90%;
+    }
+    .carousel-cell{
+        width: 52%;
+        margin-right:10px;
+        margin-left: 10px;
+    }
+    .project{
+        margin: 10px 50px 50px;
+    }
+    .skills {
+        margin: 90px 70px 80px;
+    }
+    
+    .skills .container{
+        width:90%;
+        display:flex;
+        justify-content: space-evenly;
+        gap:4em 5em;
+        flex-wrap: wrap;
+    }
+
+    .skills img{
+        width: 72px;
+        height: 80px;
+    }
 }
 
 
-.carousel-cell h4{
-    text-align: center;
+@media screen and (max-width: 620px){
+    header p{
+        width: 90%;
+        font-size: 15px;
+    }
+    section{
+        margin: 50px;
+    }
+    .carousel-cell{
+        width: 80%;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    .project{
+        margin: 10px 20px 50px;
+    }
+    .project .inner{
+        display: block;
+    }
+    .skills {
+        margin: 90px 50px 80px;
+    }
 }
 
-.carousel-cell .is-selected{
-    width: 300px;
-} */
+@media  screen and (max-width: 420px) {
+    header h1{
+        font-size: 50px;
+    }
+    section{
+        margin: 10px;
+    }
+    .section-title{
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        font-size: 35px;
+    }
+    .awards{
+        padding-bottom: 40px;
+        margin: 0 15px 15px
+    }
+    .carousel-cell{
+        height: 400px;
+    }
+    
+    .skills {
+        margin: 50px 10px 80px;
+    }  
+    .skills .section-title{
+        margin-right: 20px;
+        margin-left: 20px;
+    }  
+    .skills .container{
+        width:90%;
+        display:flex;
+        justify-content: space-evenly;
+        gap:2em 2em;
+        flex-wrap: wrap;
+    }
+
+    .skills img{
+        width: 45px;
+        height: 50px;
+    }
+}

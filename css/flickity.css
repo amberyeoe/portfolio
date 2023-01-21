@@ -2,37 +2,6 @@
 https://flickity.metafizzy.co
 ---------------------------------------------- */
 
-
-* { box-sizing: border-box; }
-
-body { font-family: sans-serif; }
-
-.carousel {
-  /* background: #EEE; */
-  width: 100%;
-}
-
-.carousel-cell {
-  width: 32.7%;
-  height: 440px;
-  margin-right: 10px;
-  /* background-color: #8C8; */
-}
-
-.carousel-cell img{
-  width: 92%;
-}
-
-/* cell number */
-/* .carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(carousel-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
-} */
-
 .flickity-enabled {
   position: relative;
 }
@@ -117,8 +86,8 @@ body { font-family: sans-serif; }
   transform: translateY(-50%);
 }
 
-.flickity-prev-next-button.previous { left: 10px; }
-.flickity-prev-next-button.next { right: 10px; }
+.flickity-prev-next-button.previous { left: 0px; }
+.flickity-prev-next-button.next { right: 0px; }
 /* right to left */
 .flickity-rtl .flickity-prev-next-button.previous {
   left: auto;
@@ -165,4 +134,15 @@ body { font-family: sans-serif; }
 
 .flickity-page-dots .dot.is-selected {
   opacity: 1;
+}
+
+@media screen and (max-width: 500px) {
+  .flickity-page-dots .dot{
+    width: 7px;
+    height: 7px;
+  }
+  .flickity-prev-next-button {
+    width: 35px;
+    height: 35px;
+  }
 }
