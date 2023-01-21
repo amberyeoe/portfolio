@@ -60,19 +60,20 @@ header p{
 }
 
 .aboutme .container{
-    height: 420px;
+    height: 250px;
 }
 
 .aboutme article{
     float: right;
-    width: 50%;
-    
+    width: 60%;  
+    padding-right: 50px;
 }
 
 .aboutme aside{
-    float:left;
-    width: 45%;
-    padding: auto;
+    float: left;
+    width: 30%;
+    display:flex;
+    justify-content: right;
 }
 
 .aboutme img{
@@ -106,8 +107,8 @@ header p{
 }
 
 .project aside{
-    display: block;
     padding: auto;
+    display: block;
 }
 
 .project img{
@@ -148,7 +149,7 @@ body { font-family: sans-serif; }
   width: 92%;
 }
 
-aside{
+.awards aside{
     display:flex;
     justify-content: center;
 }
@@ -240,10 +241,20 @@ aside{
         width: 72px;
         height: 80px;
     }
+    .aboutme aside{
+        width: 40%;
+    }
+    .aboutme img{
+        width:100%;
+    }
+    .aboutme article{
+        width: 53%;
+        padding-right: 5px;
+    }
 }
 
 
-@media screen and (max-width: 620px){
+@media screen and (max-width: 650px){
     header p{
         width: 90%;
         font-size: 15px;
@@ -264,6 +275,14 @@ aside{
     }
     .skills {
         margin: 90px 50px 80px;
+    }
+    .aboutme .container{
+        height: 340px;
+        padding: 5px;
+    }
+    .aboutme article{
+        width: 55%;
+        padding-right: 0px;
     }
 }
 
