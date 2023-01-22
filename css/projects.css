@@ -52,6 +52,22 @@
 iframe{
   padding-bottom: 20px;
 }
+p{
+  padding-bottom: 20px;
+}
+
+b{
+  text-transform: none;
+}
+
+.prototype{
+  width: 100%;
+}
+
+iframe{
+  width:700px;
+  height:385px;
+}
 
   h4{
     padding-bottom: 20px;
@@ -66,6 +82,15 @@ iframe{
   .srm, .uxd, .vap{
     margin:0;
     padding: 100px 50px 0px;
+  }
+
+  .srm .research{
+    width: 80%;
+  }
+
+  u{
+    text-transform: none;
+    text-decoration: underline;
   }
 
   
