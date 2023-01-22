@@ -211,6 +211,9 @@ body { font-family: sans-serif; }
     .project{
         margin: 10px 70px 50px;
     }
+    .award h5{
+        font-weight: 500;
+    }
 }
 
 @media screen and (max-width: 750px){
@@ -283,6 +286,9 @@ body { font-family: sans-serif; }
     .aboutme article{
         width: 55%;
         padding-right: 0px;
+    }
+    .aboutme aside{
+        padding-top: 40px;
     }
 }
 
