@@ -78,6 +78,9 @@
 .fa-instagram:hover {
   color: #E84858 !important;
 }
+.fa-github:hover{
+  color: #171515 !important;
+} 
 
 html {
  scroll-behavior: smooth;
@@ -314,9 +317,9 @@ p{
   height: 120px!important;
 }
 
-.footer .socials{
+/* .footer .socials{
   padding-left: 20px;
-}
+} */
 
 .footer h3 {
  font-size: 16px;
