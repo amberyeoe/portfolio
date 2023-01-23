@@ -160,7 +160,7 @@ body { font-family: sans-serif; }
 
 .award h5{
     color: #ffae37;
-    font-weight: 100;
+    font-weight: 500;
     padding-top: 8px;
     font-size: 14px;
     /* text-align: center; */
@@ -210,9 +210,6 @@ body { font-family: sans-serif; }
     }
     .project{
         margin: 10px 70px 50px;
-    }
-    .award h5{
-        font-weight: 500;
     }
 }
 
