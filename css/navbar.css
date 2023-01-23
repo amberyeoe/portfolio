@@ -153,8 +153,10 @@
     }
   }
   
-  @media screen and (max-width: 380px) {
-     
+  @media screen and (max-width: 400px) {
+     .scroll-indicator{
+        right: 45%;
+     }
   }
   
   @media screen and (max-height: 700px) {
