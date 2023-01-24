@@ -168,6 +168,11 @@ b{
     margin:0;
     padding: 60px 5px 0px;
   }
+  .projects{
+    margin: 0px 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
   h2{
     font-size: 40px;
   }
@@ -181,11 +186,6 @@ b{
   .srm, .uxd, .vap{
     margin:0;
     padding: 60px 5px 0px;
-  }
-  .projects{
-    margin: 0px 20px;
-    margin-left: 30px;
-    margin-right: 30px;
   }
   .proj{
     font-size: 30px;
