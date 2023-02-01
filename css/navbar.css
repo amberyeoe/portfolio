@@ -70,8 +70,6 @@
 
   .topnav .t-socials{
     color:gray !important;
-    font-size: 24px !important;
-    padding-top: 4.5px !important;
   }
 
   .topnav .fa-linkedin{
@@ -167,8 +165,11 @@
     
   }
   
-  @media screen and (max-width: 600px) {
-    
+  @media screen and (max-width: 1400px) {
+    .topnav .t-socials{
+      font-size: 24px !important;
+      padding-top: 4.5px !important;
+    }
   }
   
   @media screen and (max-width: 1300px) {
@@ -176,7 +177,6 @@
         font-size: 13px;
         padding: 12px 8px;
       }
-  
   }
   
   @media screen and (max-width: 1200px) {
