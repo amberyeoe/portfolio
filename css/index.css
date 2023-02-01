@@ -173,7 +173,8 @@ body { font-family: sans-serif; }
 /* skills section */
 
 .skills{
-    margin: 100px 100px 80px;
+    padding: 100px 100px 80px;
+    margin:0;
 }
 
 .skills .container{
@@ -226,7 +227,7 @@ body { font-family: sans-serif; }
         margin: 10px 50px 50px;
     }
     .skills {
-        margin: 90px 70px 80px;
+        padding: 90px 70px 80px;
     }
     
     .skills .container{
@@ -274,7 +275,7 @@ body { font-family: sans-serif; }
         display: block;
     }
     .skills {
-        margin: 90px 50px 80px;
+        padding: 90px 50px 80px;
     }
     .aboutme .container{
         height: 340px;
@@ -291,7 +292,7 @@ body { font-family: sans-serif; }
 
 @media screen and (max-width: 600px) {
     .skills {
-        margin: 50px 0px 80px;
+        padding: 50px 0px 80px;
     }  
     .skills .section-title{
         margin-right: 20px;
@@ -333,7 +334,7 @@ body { font-family: sans-serif; }
     }
     
     .skills {
-        margin: 50px 0px 80px;
+        padding: 50px 0px 80px;
     }  
     .skills .section-title{
         margin-right: 20px;
