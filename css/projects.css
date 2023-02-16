@@ -68,6 +68,10 @@ b{
   text-transform: none;
 }
 
+ul{
+  padding-left: 30px;
+}
+
 .prototype{
   width: 100%;
 }
@@ -118,6 +122,57 @@ b{
     display:none !important;
 }
 
+/* powerbi section */
+
+.powerbi{
+  margin: 0;
+
+}
+
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+/* background: #EEE; */
+width: 100%;
+}
+
+.carousel-cell {
+width: 90%;
+height: 500px;
+margin-right: 70px;
+/* background-color: #8C8; */
+}
+
+.carousel-cell img{
+width: 100%;
+}
+
+.report aside{
+  display:flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1400px){
+  .carousel-cell{
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .carousel-cell{
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 1100px){
+  .carousel-cell{
+    height: 400px;
+  }
+}
+
 @media screen and (max-width: 950px){
   .srm, .uxd, .vap{
     margin:0;
@@ -136,12 +191,21 @@ b{
   .srm-header{
     width:100%;
   }
+  .carousel-cell{
+    height: 350px;
+  }
 }
 
 @media screen and (max-width: 800px){
   #projectsNav{
     flex-direction: column;
     height: 170px;
+  }
+}
+
+@media screen and (max-width: 750px){
+  .carousel-cell{
+    height: 300px;
   }
 }
 
@@ -152,12 +216,28 @@ b{
   }
 }
 
+@media screen and (max-width: 750px){
+  .carousel-cell{
+    height: 250px;
+  }
+}
+
 @media screen and (max-width: 600px){
   iframe{
     width: 100%;
     height: 255px;
   }
+  .carousel-cell{
+    height: 220px;
+  }
 }
+
+@media screen and (max-width: 550px){
+  .carousel-cell{
+    height: 200px;
+  }
+}
+
 
 @media screen and (max-width: 500px){
   iframe{
@@ -176,8 +256,18 @@ b{
   h2{
     font-size: 40px;
   }
-
+  .carousel-cell{
+    height: 210px;
+  }
 }
+
+@media screen and (max-width: 450px){
+  .carousel-cell{
+    height: 170px;
+  }
+}
+
+
 @media screen and (max-width: 400px){
   iframe{
     width: 100%;
@@ -189,5 +279,25 @@ b{
   }
   .proj{
     font-size: 30px;
+  }
+  .carousel-cell{
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 350px){
+  .carousel-cell{
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .flickity-page-dots .dot{
+    width: 7px;
+    height: 7px;
+  }
+  .flickity-prev-next-button {
+    width: 25px !important;
+    height: 25px !important;
   }
 }
