@@ -88,12 +88,11 @@ ul{
 
   .projects .container{
     height: 30px;
-    padding-bottom: 20px;
   }
 
   .srm, .uxd, .vap{
     margin:0;
-    padding: 100px 50px 0px;
+    padding: 0px 50px 30px;
   }
 
   .srm .research{
@@ -114,9 +113,9 @@ ul{
     display: block !important;
 }
 
-.top{
+/* .top{
   padding-top: 0px !important;
-}
+} */
 
 .remove{
     display:none !important;
@@ -126,7 +125,6 @@ ul{
 
 .powerbi{
   margin: 0;
-
 }
 
 
@@ -147,7 +145,7 @@ margin-right: 70px;
 }
 
 .carousel-cell img{
-width: 100%;
+  width: 100%;
 }
 
 .report aside{
@@ -176,7 +174,7 @@ width: 100%;
 @media screen and (max-width: 950px){
   .srm, .uxd, .vap{
     margin:0;
-    padding: 60px 30px 0px;
+    padding: 0px 30px 30px;
   }
   section{
     margin: 100px 50px
@@ -246,7 +244,7 @@ width: 100%;
   }
   .srm, .uxd, .vap{
     margin:0;
-    padding: 60px 5px 0px;
+    padding: 0px 5px 20px;
   }
   .projects{
     margin: 0px 20px;
@@ -275,7 +273,7 @@ width: 100%;
   }
   .srm, .uxd, .vap{
     margin:0;
-    padding: 60px 5px 0px;
+    padding: 00px 5px 20px;
   }
   .proj{
     font-size: 30px;

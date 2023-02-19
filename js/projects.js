@@ -85,13 +85,13 @@ function showvap(){
   vap.classList.add("top");
 }
 
-// $.ajax({
-//     window.location = "../pages/projects.html",
-//     success:function(){
-//     showuxd();
-//  }
-//  })
+// // $.ajax({
+// //     window.location = "../pages/projects.html",
+// //     success:function(){
+// //     showuxd();
+// //  }
+// //  })
 
-function force_load_uxd() {
-    window.location = "../pages/projects.html";
-}
+// function force_load_uxd() {
+//     window.location = "../pages/projects.html";
+// }
