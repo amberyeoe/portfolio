@@ -72,7 +72,7 @@
             Then, we designed our logo on Adobe Photoshop, using a treasure box and a clock which are literal meanings of our resort name.
             <br>
             <br>
-            With our structure settled, I could do my pen and paper prototype to envision what I would like my final website to look like.
+            With our structure settled, I could do my pen and paper prototype to envision what I would like my final website to look like. I included Gestalt principles,  Nielsen 10 heuristic principles, to ensure that my websites were minimalistic and easy to navigate.
             <img src="../resources/prototype.jpg" class="image" alt="">
             <br>
             <br>
@@ -154,6 +154,11 @@
               <br>
               Sourced datasets from <u>reliable government statistical sites</u> like moh.gov.sg, SingStat, etc. From the user stories, they brought up 3 main points, <u>Quality, Cost, and Efficiency</u>, hence, I decided to focus on these points.
               Additionally, I tried to used data that had <u>at least 10 years of data</u> and the <u>most recent year being at least 2019</u> so that I can analyse the trend and where Singapore's Healthcare currently stands. 
+              For <b>Quality</b>, I used the government health expenditure, trust level and life expectancy as they influence and is an indicator the quality of healthcare. 
+              
+              For <b>Cost</b>, I've included the monthly household expenditure, Consumer price index CPI or better known as the inflation rate, subsidy rates, and cost comparison with other countries and different ward types to give a better understanding of the cost of healthcare in Singapore. . 
+              
+              For <b>Efficiency</b>, I've used the number of healthcare professionals, facilities, beds and wait time as a measure of efficiency because it shows the growing capacity of Singapore’s healthcare over time.
               <br><br>After downloading all the datasets, I categorised them by their factor and started to clean the data:
               </p>
               <ul>
@@ -173,7 +178,20 @@
               </p>
             </p>
           <h4>Outcome & Results Achieved</h4>
-          <p>Overall, Singapore Visuals suggest that its healthcare system has established itself by ensuring it was <u>equitable, efficient and ever-improving</u>. Its variety of healthcare options and subsidies ensures that <u>everyone regardless
+          <p><b>Quality Dashboard: </b> <br>
+            I used the government health expenditure as a measure of quality because increasing expenditure means that more money can be used to <u>improve the system like increasing healthcare subsidies, attracting more talented healthcare workers or investing in more technologically advanced medical equipment</u>. Then the trust level was used as it is directly proportional to the quality and effectiveness of healthcare so the higher the trust level the better the quality. I’ve highlighted Singapore in red so it is easier to identify Singapore. Additionally, I've included life expectancy as a measure of quality as a good healthcare system would be able to <u>extend their patient’s life expectancy by providing curative care</u>. From this comparative line graph, we can see a <u>drastic difference</u>between Singapore’s and the world average’s life expectancy which </u>implies that Singapore’s healthcare quality is above average</u>. Next, in this forecast, we can see that there is an increasing trend for life expectancy in Singapore suggesting that the <u>effectiveness and quality of healthcare would also continue to increase</u>. 
+            <br><br>
+            <b>Cost Dashboard: </b> <br>
+            from this table showing the CPI, we can see that the prices have been increasing until 2019 which is the benchmark year. The CPI has dropped for 2020 and 2021 <u>meaning the cost of healthcare decreased during these 2 years</u>. Next, this visual is a comparative bar graph (Subsidy rates based on monthly per capita household income (PCHI) for B2/C wards) that shows the <u>subsidy given by the government to lessen the financial burden of lower-income residents</u>. With this data, our users can use it and know more about the subsidies provided as it was one of their concerns and be more prepared about finances in the future. Additionally, from this horizontal bar graph visual: (Median Total Bill based on Ward type for Stroke Patients), we can tell that there are many options in Singapore’s healthcare, which contributes to the different healthcare costs. Since the <u>ward type does not affect the quality of service and only affects the level of privacy provided</u>, the bill for stroke patients is <u>relatively affordable using the cost of ward C bed</u>. Furthermore, <u>stroke is one of the top critical illnesses in Singapore</u>, so this can give users a rough estimate of how much it would cost            
+            <br><br>
+            <b>Efficiency Dashboard: </b> <br>
+            This decomposition tree displays the total number of facilities each year in descending order, as we see that the most recent year is on the top, suggesting that <u>the number of facilities is increasing over time, this makes it more accessible to people and lowers the possibility of overcrowding in healthcare facilities, which increases its efficiency</u>. Additionally, the number of beds is increasing meaning that hospitals would be able to admit more patients and the waiting time would decrease. Next, this is a forecast line graph that shows the number Singapore residents per healthcare staff over the years. The final results show the available manpower in healthcare, where <u> the lower the value, the better the efficiency as the medical staff can devote their attention to a smaller group of people</u>. Since the trend is decreasing and forecasted to decrease, <u>there will be sufficient manpower to handle the workload in healthcare facilities and provide medical attention to patients efficiently and timely</u>.
+            Now, we will tap into view wait times, where we can see the spread of polyclinics around Singapore and its respective median wait time. The <u>polyclinics are well spread</u> and if we hover over the bubbles we can see that the consultation wait times are not that long and with the longest consultation wait time being 28 mins. If we take a look at that qna turned card visual at the top right, we can see that the average total wait time, inclusive of registration and consultation wait time was only 15 mins which is a <u>very short waiting time</u> although the best is if there were no waiting needed at all, which may be possible if they visited on off-peak timings.            
+            <br><br>
+            <b>Statistical Modelling: </b> <br>
+            This is a linear regression model and the information above gives a better understanding of the visual. For R2 and Corr, the closer it is to 1 the better the prediction and relationship respectively. Overall, this means that the model shows a <u>strong relationship between the two variables</u>, so the higher the government health expenditure, the lower the Singapore population per medical staff. This means that the increased expenditure was possibly used to <u> invest in hiring and attracting more healthcare workers</u>. And since we know the government healthcare spending has been on an upward trend, this means that the <u>healthcare manpower would be able to expand and increase its efficiency </u>. 
+            <br><br>
+            Overall, Singapore Visuals suggest that its healthcare system has established itself by ensuring it was <u>equitable, efficient and ever-improving</u>. Its variety of healthcare options and subsidies ensures that <u>everyone regardless
             of income or social standing can get medical attention</u>. Therefore, I <b><u>support that Singapore has a good healthcare system</u></b>.
           </p>
           <!-- <a href="https://app.powerbi.com/links/4Tz5HytWIm?ctid=243ebaed-00d0-4690-a7dc-75893b0d9f98&pbi_source=linkShare" target="_blank" class="link">Dashboard Link</a> -->
