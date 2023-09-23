@@ -1,7 +1,8 @@
 //projects page
 
 let uxd=document.getElementById("uxd");
-let srm=document.getElementById("srm");
+let pap=document.getElementById("pap");
+// let srm=document.getElementById("srm");
 let vap=document.getElementById("vap");
 let uxd_index_btn=document.getElementById("uxd-btn")
 
@@ -13,28 +14,33 @@ function readurl(){
         showuxd();
     }
     
-    else if (view == "srm"){
-        showsrm();
-    }
+    // else if (view == "srm"){
+    //     showsrm();
+    // }
 
     else if (view == "vap"){
         showvap();
     }
+    else if (view == "pap"){
+      showpap();
+  }
 }
 
 //reset category color
 function resetColor() {
   document.getElementById("btn1").className="";
   document.getElementById("btn2").className="";
-  document.getElementById("btn3").className="";
+  // document.getElementById("btn3").className="";
   document.getElementById("btn4").className="";
+  document.getElementById("btn5").className="";
 }
 
 //reset projects
 function resetDisplay(){
   uxd.className="uxd"
-  srm.className="srm"
+  // srm.className="srm"
   vap.className="vap"
+  pap.className="pap"
 }
 
 //show all the projects
@@ -45,8 +51,9 @@ function showAll() {
   btn.classList="click" //only with this class name will the colour change
   uxd.classList.add("display"); //so that all faclities will be seen
   uxd.classList.add("top");
-  srm.classList.add("display");
+  // srm.classList.add("display");
   vap.classList.add("display");
+  pap.classList.add("display");
 }
 
 //show uxd
@@ -55,23 +62,25 @@ function showuxd(){
   resetColor();
   resetDisplay();
   btn.classList="click"
-  srm.classList.add('remove'); //section will be removed
+  // srm.classList.add('remove'); //section will be removed
   vap.classList.add("remove");
+  pap.classList.add("remove");
   uxd.classList.add("display");
   uxd.classList.add("top");
 }
 
 //show srm
-function showsrm(){
-  let btn=document.getElementById("btn3");
-  resetColor();
-  resetDisplay();
-  btn.classList="click"
-  uxd.classList.add("remove"); //section will be removed
-  vap.classList.add("remove");
-  srm.classList.add("display");
-  srm.classList.add("top");
-}
+// function showsrm(){
+//   let btn=document.getElementById("btn3");
+//   resetColor();
+//   resetDisplay();
+//   btn.classList="click"
+//   uxd.classList.add("remove"); //section will be removed
+//   vap.classList.add("remove");
+//   pap.classList.add("remove");
+//   srm.classList.add("display");
+//   srm.classList.add("top");
+// }
 
 //show vap
 function showvap(){
@@ -79,10 +88,22 @@ function showvap(){
   resetColor();
   resetDisplay();
   btn.classList="click"
-  srm.classList.add("remove"); //section will be removed
+  // srm.classList.add("remove"); //section will be removed
   uxd.classList.add("remove");
+  pap.classList.add("remove");
   vap.classList.add("display");
   vap.classList.add("top");
+}
+function showpap(){
+  let btn=document.getElementById("btn5");
+  resetColor();
+  resetDisplay();
+  btn.classList="click"
+  // srm.classList.add("remove"); //section will be removed
+  uxd.classList.add("remove");
+  vap.classList.add("remove");
+  pap.classList.add("display");
+  pap.classList.add("top");
 }
 
 // // $.ajax({
