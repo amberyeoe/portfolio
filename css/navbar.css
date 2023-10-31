@@ -160,8 +160,15 @@
      }
   }
   
+  @media screen and (max-height: 700px) {
+    
+  }
   
-  @media screen and (max-width: 1500px) {
+  @media screen and (max-height: 600px) {
+    
+  }
+  
+  @media screen and (max-width: 1400px) {
     .topnav .t-socials{
       font-size: 24px !important;
       padding-top: 4.5px !important;
@@ -170,7 +177,7 @@
   
   @media screen and (max-width: 1300px) {
       .topnav a:not(.dropdown-content a) {
-        font-size: 11px;
+        font-size: 13px;
         padding: 12px 8px;
       }
   }
