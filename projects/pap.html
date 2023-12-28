@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../resources/a-logo.png">
+    <title>Amber's Portfolio</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/flickity.css">
+  </head>
+  <body onload="readurl()"> <!-- to filter the page  -->
+    <nav class="topnav" id="myTopnav">
+        <div class="container">
+          <a href="../index.html" style="padding:0; display:inline">
+            <img src="../resources/namelogo.png" alt="Logo" class="nav-logo" id="navLogo">
+          </a>
+          <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
+          <div class="nav-items">
+            <a href="../index.html" class="item">home</a>
+            <a href="../index.html#project" class="item">Projects</a>    
+            <a href="../index.html#awards" class="item">Achievements</a>                                                           
+            <a href="../index.html#skills"class="item">Skills</a>
+            <a href="mailto:amberyeo21@gmail.com" class="item">Contact</a>  
+            <a href="https://www.linkedin.com/in/amber-yeo-51a4b2242/" class="t-socials"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://instagram.com/amberyeoe?igshid=YmMyMTA2M2Y=" class="t-socials"><i class="fa-brands fa-instagram"></i></a>           
+            <a href="https://github.com/amberyeoe" class="t-socials"><i class="fa-brands fa-github"></i></a>           
+          </div>
+        </div>
+        <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
+          <i class="ti-angle-down"></i>
+        </div>
+                
+        <script type="text/javascript" src="../js/portfolio.js"></script>
+    </nav>
+    <header>
+        <a href="../index.html#project"><i class="fa-solid fa-arrow-left"></i></a>
+        <h2 class="section-title">Predictive Analytics Project</h2>
+    </header>
+
+    <section class="projects" style="margin-top: 50px;">
+      <div class="pap display" id="pap">
+        <h2 class="proj"></h2>
+        <div class="banner">
+          <img src="../resources/pap.png" class="srm-header">
+        </div>
+      
+        <br>
+        <h4>Project Scope</h4>
+        <b>Background Information:</b>
+        <p>
+          Many Singaporeans share the sentiment that <b>addressing climate change might seem futile</b>, given concerns about costs, inconvenience, and limited impact. In 2021, 67% worried about costs, 66% saw it as inconvenient, 27% struggled with sustainable habits, 24% found the status quo insufficient, and 22% deemed individual action insignificant. While reversing climate change demands persistent effort, there's a drive to reduce emissions, plastic, food, and energy wastage. Singapore's Environmental Performance Index (EPI) reflects this effort, with a 50.9 score in 2022, ranking 44th globally, showing a 3.7 increase over a decade. Despite a considered "poor" score, the upward trend signals improving sustainability. 
+          The urgency of environmental pollution's impact necessitates global efforts in reducing waste and emissions.
+        </p>
+        <b>Business Scenario:</b>
+        <p>
+          Our project aims to provide actionable insights into current consumption trends, aiding community organizations, non-profits, and grassroots initiatives in resource reduction efforts. Through predictive analysis, we predict resource consumption patterns across sectors, empowering businesses to align with the Green Plan's Objectives. By optimizing resource management and fostering sustainability, we contribute to a greener future and business growth. Our initiative also benefits academia, offering valuable data for studies in sustainability and predictive modeling. Emphasizing awareness, innovation, and sustainable practices, our project supports a more environmentally responsible future. Timely action is crucial for reversing environmental impacts and securing a planet for future generations
+        </p>
+        <b>Business Goal:</b>
+        <p>
+          Improving Singapore environment sustainability by reducing food, plastic, energy, and carbon emissions consumption.
+        </p>
+        <b>Stakeholders: </b>
+        <p>
+          Agencies involved in Singapore Green Plan 2030
+        </p>
+        <b>Success Criteria(s): </b>
+        <ul>
+          <li>Develop predictive models of less than 0.05 Validation ASE</li>
+          <li>(And/Or) Adjusted R-Square to be greater than 0.7</li>
+        </ul>
+        <br><br>
+        <h4>My Objectives</h4>
+        <p>Predict the top contributors to <b>plastic waste</b> to raise awareness and reduce plastic wastes in those areas.</p>
+        <h4>Final Project</h4>
+        <a href="resources/PAP IT2386.pdf" class="link" target="_blank">Final Project Slides</a>
+
+      </div>
+    </section>
+
+</body>
+<footer class="footer">
+    <div class="container">
+
+      <div class="box footer-left">
+        <img src="../resources/namelogo.png"/>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/amber-yeo-51a4b2242/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://instagram.com/amberyeoe?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/amberyeoe"><i class="fa-brands fa-github"></i></a>           
+        </div>
+      </div>                 
+      <div class="box">
+        <div class="email">
+          <div class="footer-header">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+          </div>
+          <p>Amberyeo21@gmail.com</p>
+        </div>
+      
+        <div class="contact">
+          <div class="footer-header">
+            <i class="fas fa-phone"></i>
+            <h3>Contact</h3>
+          </div>
+          <p>+65-11111111</p>
+        </div>
+      </div>
+      
+      <hr>
+    </div>
+    <section style="width:100%;margin:0px;">
+      <div class="copyright" style="padding: 10px;">
+        <div style="width:100%; padding: 20px; text-align: center">
+          <p>Copyright 2022 &copy; Amber Yeo | All rights reserved.</p>
+        </div>
+      </div>
+     </section>
+  </footer>
+ <script src="../js/flickity.pkgd.min.js"></script>
+ <script src="../js/flickity.js"></script>
+ <script src="../js/portfolio.js"></script>
+ <script src="../js/projects.js"></script>
+</html>

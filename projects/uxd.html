@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../resources/a-logo.png">
+    <title>Amber's Portfolio</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/flickity.css">
+  </head>
+  <body onload="readurl()"> <!-- to filter the page  -->
+    <nav class="topnav" id="myTopnav">
+        <div class="container">
+          <a href="../index.html" style="padding:0; display:inline">
+            <img src="../resources/namelogo.png" alt="Logo" class="nav-logo" id="navLogo">
+          </a>
+          <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
+          <div class="nav-items">
+            <a href="../index.html" class="item">home</a>
+            <a href="../index.html#project" class="item">Projects</a>    
+            <a href="../index.html#awards" class="item">Achievements</a>                                                           
+            <a href="../index.html#skills"class="item">Skills</a>
+            <a href="mailto:amberyeo21@gmail.com" class="item">Contact</a>  
+            <a href="https://www.linkedin.com/in/amber-yeo-51a4b2242/" class="t-socials"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://instagram.com/amberyeoe?igshid=YmMyMTA2M2Y=" class="t-socials"><i class="fa-brands fa-instagram"></i></a>           
+            <a href="https://github.com/amberyeoe" class="t-socials"><i class="fa-brands fa-github"></i></a>           
+          </div>
+        </div>
+        <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
+          <i class="ti-angle-down"></i>
+        </div>
+                
+        <script type="text/javascript" src="../js/portfolio.js"></script>
+    </nav>
+    <header>
+        <a href="../index.html#project"><i class="fa-solid fa-arrow-left"></i></a>
+        <h2 class="section-title">Le Timeless Trésor</h2>
+    </header>
+
+    <section class="projects" style="margin-top: 50px;">
+        <div class="uxd" id="uxd">
+            <h2 class="proj"></h2>
+            <div class="video">
+              <iframe src="https://www.youtube.com/embed/IMENVfR-2eA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+              <h4>Project Scope/Client's Problem </h4>
+            <p>Task: To design and develop an intuitive hotel web user interface as a team <u>using HTML, CSS and JavaScript</u></p>
+            <h4>My Role & Solution </h4>
+            <p>Created: <a href="https://letimelesstresor.netlify.app/pages/facilities.html" class="link">Facilities</a> and <a href="https://letimelesstresor.netlify.app/pages/services.html" class="link">Services</a> pages, and Facility booking forms</p>
+            <h4>My Work Process</h4>
+            <p><b>Planning: </b><br>
+              Firstly, we decided on a <u><b>Luxury Vintage Hotel Website</b></u>.
+              <br><br>
+              My team and I found some <u>competitors to our hotel</u> and did an analysis to find out what features made it good and what could be better to make our website comparable to theirs. We identified Marina Bay Sands and the Shangri-La Resort as <u>prime competitors</u>. 
+              We noted that they used sophisticated and consistent colour schemes, and sufficient whitespaces to display a modern and classy look.
+              <br><br>
+              We proceeded to conduct a survey to see what users expect from our website, considering our vintage theme. With their responses, we created a <u>color palette</u> for our website to have a consistent feel.
+              <img src="../resources/colorpalette.jpeg" class="image" alt="">
+              <br>
+              Next, we needed to choose a suitable name that represented our core values of vintage and luxury. After much research, we decided on the name "Le Timeless Trésor".
+              The name is a mix of english and french, with <u>trésor translating to treasure</u>. We chose this name as we wanted the memories that our guests make at our resort to be a <u>timeless treasure</u> for them.
+              Then, we designed our logo on Adobe Photoshop, using a treasure box and a clock which are literal meanings of our resort name.
+              <br>
+              <br>
+              With our structure settled, I could do my pen and paper prototype to envision what I would like my final website to look like. I included Gestalt principles,  Nielsen 10 heuristic principles, to ensure that my websites were minimalistic and easy to navigate.
+              <img src="../resources/prototype.jpg" class="image" alt="">
+              <br>
+              <br>
+              <b>Coding: </b>
+              <br>
+              We created a Git respository and added each other as contributors so that we could all collaborate on the same file. I coded the website on Atom. I also added comments and used descriptive class & ID names so it's easy to understand my codes.
+              <img src="../resources/uxd1.jpg" class="image code" alt=""> 
+              <br>
+              I also added media to make my webpages responsive to the <u>different screen sizes</u>, while remaining the same feel.
+            </p>
+            <h4>Outcome & Results Achieved</h4>
+            <p>
+              Finally, with our own complete webpages, we <u>linked up our webpages</u> and did some final checking to make sure our website <u>felt consistent throughout</u>. Feel free to check out our website with the link down below.
+            </p>
+            <a href="https://letimelesstresor.netlify.app/" target="_blank" class="link">Website Link</a>
+            <br><br><br>
+          </div>
+    </section>
+    </body>
+
+    <footer class="footer">
+        <div class="container">
+
+          <div class="box footer-left">
+            <img src="../resources/namelogo.png"/>
+            <div class="socials">
+              <a href="https://www.linkedin.com/in/amber-yeo-51a4b2242/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://instagram.com/amberyeoe?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://github.com/amberyeoe"><i class="fa-brands fa-github"></i></a>           
+            </div>
+          </div>                 
+          <div class="box">
+            <div class="email">
+              <div class="footer-header">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+              </div>
+              <p>Amberyeo21@gmail.com</p>
+            </div>
+          
+            <div class="contact">
+              <div class="footer-header">
+                <i class="fas fa-phone"></i>
+                <h3>Contact</h3>
+              </div>
+              <p>+65-11111111</p>
+            </div>
+          </div>
+          
+          <hr>
+        </div>
+        <section style="width:100%;margin:0px;">
+          <div class="copyright" style="padding: 10px;">
+            <div style="width:100%; padding: 20px; text-align: center">
+              <p>Copyright 2022 &copy; Amber Yeo | All rights reserved.</p>
+            </div>
+          </div>
+         </section>
+      </footer>
+     <script src="../js/flickity.pkgd.min.js"></script>
+     <script src="../js/flickity.js"></script>
+     <script src="../js/portfolio.js"></script>
+     <script src="../js/projects.js"></script>
+</html>

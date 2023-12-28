@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../resources/a-logo.png">
+    <title>Amber's Portfolio</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/flickity.css">
+  </head>
+  <body onload="readurl()"> <!-- to filter the page  -->
+    <nav class="topnav" id="myTopnav">
+        <div class="container">
+          <a href="../index.html" style="padding:0; display:inline">
+            <img src="../resources/namelogo.png" alt="Logo" class="nav-logo" id="navLogo">
+          </a>
+          <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
+          <div class="nav-items">
+            <a href="../index.html" class="item">home</a>
+            <a href="../index.html#project" class="item">Projects</a>    
+            <a href="../index.html#awards" class="item">Achievements</a>                                                           
+            <a href="../index.html#skills"class="item">Skills</a>
+            <a href="mailto:amberyeo21@gmail.com" class="item">Contact</a>  
+            <a href="https://www.linkedin.com/in/amber-yeo-51a4b2242/" class="t-socials"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://instagram.com/amberyeoe?igshid=YmMyMTA2M2Y=" class="t-socials"><i class="fa-brands fa-instagram"></i></a>           
+            <a href="https://github.com/amberyeoe" class="t-socials"><i class="fa-brands fa-github"></i></a>           
+          </div>
+        </div>
+        <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
+          <i class="ti-angle-down"></i>
+        </div>
+                
+        <script type="text/javascript" src="../js/portfolio.js"></script>
+    </nav>
+    <header>
+        <a href="../index.html#project"><i class="fa-solid fa-arrow-left"></i></a>
+        <h2 class="section-title">Is Singapore is a good Country to live in?</h2>
+    </header>
+
+    <section class="projects" style="margin-top: 50px;">
+      <div class="srm" id="srm">
+        <h2 class="proj"></h2>
+        <div class="banner">
+          <img src="../resources/srm2.jpg" class="srm-header">
+        </div>
+
+        <h4>Project Scope/Client's Problem </h4>
+        <p>You are a group of innovative, creative and energetic young people (The “ICE” Team) who intend to use data-driven analyses to investigate social issues / support better living in the community. As a team, you are to pick a social topic or a current issue, conjecture a main hypothesis and a set of sub-hypotheses, which will be verified or disproven by the analysis. Team members are to verify or disprove 1 sub-hypothesis each, which will contribute to verify or disprove the team’s main hypothesis.
+        <br><br><b>Chosen Hypothesis: Singapore is a good country to live in</b></p>
+        <h4>My Role & Solution </h4>
+        <p>Justify <b>my sub-hypthesis: Singapore has the best healthcare</b></p>
+        <h4>My Work Process</h4>
+        <p>Firstly, we <u>crafted survey questions</u> about our sub-hypothesis and gathered 120 responses from various age groups. 
+          I found secondary datasets that influenced my sub-hypothesis. Next, I found what a "good healthcare system" meant on the World Health Organisation (WHO) so that the users of my report can <u>first understand what makes a good healthcare system</u>.
+          I focused my research on 3 aspects: <u>Affordability, Efficiency, and Life Expectancy</u>.
+          Using my statistical research methods skills learnt, I used <u>hypothesis testing(z-test), confidence interval and regression </u> to analyse the datasets including my survey results. 
+          <br>
+          <img src="../resources/srm3.jpg" class="research">
+          <br>
+          After getting a conclusion from my analysis, I had to craft a report to <u>explain my discovery</u>. I found evidences that showed the relationship between the aspects I found and how it affects my sub-hypothesis. 
+          For example, to <u>explain why I've chosen life expectancy</u> as an affecting factor. I found out that a good healthcare system will have more healthcare facilities, more highly skilled healthcare
+          workers that can treat patients more efficiently, and more up to date resources so that they can <u>readily treat patients</u>, regardless of the complexity of treatment, <u>prolonging
+          their residents' life expectancy</u>. And therefore, life expectancy was used as a measure of healthcare quality.
+        </p>
+        
+        <h4>Outcome & Results Achieved</h4>
+        <b>Sub-Hypothesis Conclusion:</b><br>
+        <p>In conclusion, our statistical testing is able to support the claim that “Singapore has one of the Best Healthcare Systems in the World”. However, the claim that “Singapore has one of the Best Healthcare Systems in the World” could be false, as due to limited time and resources, the hypothesis testing was only done on two aspects that are influenced by the quality of healthcare: the life expectancy of a country’s population and the affordability of healthcare. If other aspects that determine the quality of healthcare like the clinical quality performance measures and patient experience and perceptions on healthcare were used to test the hypothesis too, the validity of our claim may be different.
+          Furthermore, the hypothesis testing is flawed as the aspect of life expectancy can be affected by other factors such as food intake, physical activity level and stress level of individuals, just to list a few. Therefore, even though healthcare affects life expectancy, we cannot base the quality of healthcare on life expectancy alone
+          </p>
+        <b>Hypothesis Conclusion:</b><br>
+        <p>In conclusion, Singapore is considered one of the best countries to live in the world, but <b>our statistical findings do not fully support this claim</b>. While Singapore is known for its safety and good education and healthcare systems, there is limited evidence to support these claims. Our findings also show that there are fewer tertiary education holders in Singapore than the global average. The claim that "Singapore is a good country to live in" is <u>subjective and depends on personal standards</u>, but our analysis was based on factors such as education, healthcare, safety, low cost, and stress-free living. However, more statistical testing and data collection is needed to reach a true conclusion.
+        </p>
+        <a href="../resources/Statistical Report.pdf" target="_blank" class="link" download>Report PDF</a>
+        <br><br><br>
+      </div>
+    </section>
+
+</body>
+<footer class="footer">
+    <div class="container">
+
+      <div class="box footer-left">
+        <img src="../resources/namelogo.png"/>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/amber-yeo-51a4b2242/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://instagram.com/amberyeoe?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/amberyeoe"><i class="fa-brands fa-github"></i></a>           
+        </div>
+      </div>                 
+      <div class="box">
+        <div class="email">
+          <div class="footer-header">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+          </div>
+          <p>Amberyeo21@gmail.com</p>
+        </div>
+      
+        <div class="contact">
+          <div class="footer-header">
+            <i class="fas fa-phone"></i>
+            <h3>Contact</h3>
+          </div>
+          <p>+65-11111111</p>
+        </div>
+      </div>
+      
+      <hr>
+    </div>
+    <section style="width:100%;margin:0px;">
+      <div class="copyright" style="padding: 10px;">
+        <div style="width:100%; padding: 20px; text-align: center">
+          <p>Copyright 2022 &copy; Amber Yeo | All rights reserved.</p>
+        </div>
+      </div>
+     </section>
+  </footer>
+ <script src="../js/flickity.pkgd.min.js"></script>
+ <script src="../js/flickity.js"></script>
+ <script src="../js/portfolio.js"></script>
+ <script src="../js/projects.js"></script>
+</html>

@@ -84,7 +84,7 @@ header p{
 
 .project{
     padding-top:80px;
-    margin: 0px 120px 50px;
+    margin: 0px 120px 0px;
 }
 
 .project h2{
@@ -124,7 +124,7 @@ aside .uxd-img{
 
 .awards{
     padding-top: 80px;
-    margin-top: 30px;
+    margin-top: 0px;
     margin-bottom: 20px;
 }
 
