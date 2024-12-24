@@ -35,12 +35,12 @@
                 
         <script type="text/javascript" src="../js/portfolio.js"></script>
     </nav>
-    <header>
+    <header class="proj">
         <a href="../index.html#project"><i class="fa-solid fa-arrow-left"></i></a>
         <h2 class="section-title">Weapon Object Detection With AutoML</h2>
     </header>
 
-    <section class="projects" style="margin-top: 50px;">
+    <section class="projects">
       <div class="proj_details" id="proj_details">
         <div class="banner">
           <img src="../resources/automl.jpg" alt="" class="srm-header">
@@ -54,7 +54,7 @@
         </p>
 
         <h4>Data Prep</h4>
-        <p>My dataset is from roboflow https://universe.roboflow.com/ashish-cuamw/test-y7rj3
+        <p>My dataset is from <a href="https://universe.roboflow.com/ashish-cuamw/test-y7rj3" target="_blank" class="link">RoboFlow</a>
             <br><br>
             To keep cost down, I only used 260 images from all downloaded dataset
             <br><br>
@@ -66,10 +66,11 @@
                 <li>Removing those with watermarks, cartoon, or still images of the object</li>
                 <li>Adding back more images to replace those I just deleted</li>
             </ul>
-            
+            <p>
             <br>
             After data cleaning, I drew the bounding boxes using makesense.ai.
             <br>
+            </p>
             <img src="../resources/aia_bounding_box.png" alt="drawing bounding boxes makesense ai" class="srm-header">
             <br>
             </p>
@@ -90,7 +91,7 @@
                 </li>
                 <li>Test out the normalised coordinates</li>    
                     <ul>
-                        <li><img src="../resources/aia_labeled.png" alt=""></li>
+                        <li><img src="../resources/aia_labeled.png" class="images" alt=""></li>
                     </ul>
                 <li>Save edited data.csv</li>
             </ul>
@@ -106,7 +107,7 @@
         </p>
         <p><b>Model Predictions</b>
             <br>
-            <img src="../resources/aia_results_1.png" alt="">
+            <img src="../resources/aia_results_1.png" alt="" class="images">
         </p>
         <p>The model was able to accurately identify the objects in the image. But boxes drawn are not the best, with extra space (knife object) and not boxing the full object (pistol object). Despite accurate results, the confidence values are relatively low.</p>
         <p style="padding-bottom: 0px;">
