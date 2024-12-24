@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../resources/a-logo.png">
+    <title>Amber's Portfolio</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/flickity.css">
+  </head>
+  <body onload="readurl()"> <!-- to filter the page  -->
+    <nav class="topnav" id="myTopnav">
+        <div class="container">
+          <a href="../index.html" style="padding:0; display:inline">
+            <img src="../resources/namelogo.png" alt="Logo" class="nav-logo" id="navLogo">
+          </a>
+          <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
+          <div class="nav-items">
+            <a href="../index.html" class="item">home</a>
+            <a href="../index.html#project" class="item">Projects</a>    
+            <a href="../index.html#awards" class="item">Achievements</a>                                                           
+            <a href="../index.html#skills"class="item">Skills</a>
+            <a href="mailto:amberyeo21@gmail.com" class="item">Contact</a>  
+            <a href="https://www.linkedin.com/in/amber-yeo-51a4b2242/" class="t-socials"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://instagram.com/amberyeoe?igshid=YmMyMTA2M2Y=" class="t-socials"><i class="fa-brands fa-instagram"></i></a>           
+            <a href="https://github.com/amberyeoe" class="t-socials"><i class="fa-brands fa-github"></i></a>           
+          </div>
+        </div>
+        <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
+          <i class="ti-angle-down"></i>
+        </div>
+                
+        <script type="text/javascript" src="../js/portfolio.js"></script>
+    </nav>
+    <header>
+        <a href="../index.html#project"><i class="fa-solid fa-arrow-left"></i></a>
+        <h2 class="section-title">Weapon Object Detection With AutoML</h2>
+    </header>
+
+    <section class="projects" style="margin-top: 50px;">
+      <div class="proj_details" id="proj_details">
+        <div class="banner">
+          <img src="../resources/automl.jpg" alt="" class="srm-header">
+        </div>
+        <h4>Project Scope </h4>
+        <p>
+            Trained and deployed a AutoML object detection model on weapon class, rifle, pistol, and knife.
+            This significantly enhances security by swiftly detecting the presence of weapons, <u>enabling faster response times</u>. In countries like the United States, where carrying weapons are legal, armed robbery and school shootings are on the rise, this model can <u>monitor and scan for potential threats in vulnerable locations</u> such as schools and airports.
+            While humans cannot be everywhere at once, this system supplements human presence by continuously monitoring and providing immediate alerts. Additionally, it enables <b>proactive risk management</b> by <u>identifying potential threats before they materialize</u>.
+            I will be training my model to recognise rifles, pistols, and knives, as these are the most commonly used and deadly weapons. I will be getting around 90 images per category, and images will be formatted to jpg, with various types, angles and lighting conditions, as well as how they are carried
+        </p>
+
+        <h4>Data Prep</h4>
+        <p>My dataset is from roboflow https://universe.roboflow.com/ashish-cuamw/test-y7rj3
+            <br><br>
+            To keep cost down, I only used 260 images from all downloaded dataset
+            <br><br>
+            <b>Data Cleaning</b>
+            <br>
+            Checking image quality
+            <ul>
+                <li>Checking the images if they are suitable</li>
+                <li>Removing those with watermarks, cartoon, or still images of the object</li>
+                <li>Adding back more images to replace those I just deleted</li>
+            </ul>
+            
+            <br>
+            After data cleaning, I drew the bounding boxes using makesense.ai.
+            <br>
+            <img src="../resources/aia_bounding_box.png" alt="drawing bounding boxes makesense ai" class="srm-header">
+            <br>
+            </p>
+            <p>
+            <b>Edit the data.csv (annotation file)</b>
+            <br><br>
+            Existing data.csv file from makesense.ai only give top left vertice coordinate with the image width and height
+            <ul>
+                <li>Compute bottom right coordinate</li>
+                <li>Normalise coordinates</li>
+                <li>Edit image name to correct storage bucket path</li>
+                <li>Format csv correctly
+                    <ul>
+                        <li>Remove unnecessary columns</li>
+                        <li>Reorder columns</li>
+                        <li>Add empty columns for unstated vertices</li>
+                    </ul>
+                </li>
+                <li>Test out the normalised coordinates</li>    
+                    <ul>
+                        <li><img src="../resources/aia_labeled.png" alt=""></li>
+                    </ul>
+                <li>Save edited data.csv</li>
+            </ul>
+            <br>
+        
+        </p>
+        
+        <h4>Model Predictions & Performance</h4>
+        <p>After the images and annotation file was finalised and uploaded into Google Cloud Storage Bucket, the AutoML model was trained and deployed for use.
+            <br><br>
+            Model average precision was 0.58 for all labels, but if confidence level is adjusted to 0.323, precision and recall values are more balanced at around 0.64
+            <img src="../resources/aia_automl.png" class="srm-header" alt="">
+        </p>
+        <p><b>Model Predictions</b>
+            <br>
+            <img src="../resources/aia_results_1.png" alt="">
+        </p>
+        <p>The model was able to accurately identify the objects in the image. But boxes drawn are not the best, with extra space (knife object) and not boxing the full object (pistol object). Despite accurate results, the confidence values are relatively low.</p>
+        <p style="padding-bottom: 0px;">
+            It was able to correctly identify most of the class in an image, but sometimes it mislabelled or didnt detect the object class at all, within my confidence threshold.
+            <br>
+            This results are <u>not bad but could be better</u>
+            <br><br>
+            might be caused by <b>issues in training images:</b>
+            <ul>
+                <li>could be because i had too little data (images and bounding boxes)
+                    <ul>
+                        <li>if there were more images and bounding boxes, it might have done better</li>
+                    </ul>
+                </li>
+                <li>or could be because in some of my training data, i had to overlap the bounding boxes as the object was placed slanted and took up a bigger space
+                    <ul>
+                        <li>with the overlapped class, the model might have found it hard to learn with the limited data as well</li>
+                    </ul>
+                </li>
+                <li>rifle training images might be too dark
+                    <ul>
+                        <li>the model was not able to properly learn the rifle class</li>
+                    </ul>
+                </li>
+            </ul>
+            <br>
+            <b>Observations of Drawn/Identified objects:</b>
+                <ul>
+                    <li>most boxes drawn correctly</li>
+                    <li>but some object class was missed or misclassed</li>
+                    <li>bounding box drawn are not very tight</li>
+                </ul>
+            <br>
+            <b>Observed confidence value:</b>
+                <ul>
+                    <li>most correctly labelled classes had confidence that was not very high (0.6 ~ 0.3)</li>
+                    <li>could be improved by training the model more</li>
+                    <li>can adjust confidence threshold if we
+                        <ul>
+                            <li>want more objects to be detected we can decrease the confidence value (=higher recall lower precision),</li>
+                            <li>increase confidence if we want less misclassified objects (=higher precision, lower recall)</li>
+                            <li>adjust according to future goals and criteria</li>
+                        </ul>
+                    </li>
+                </ul>
+        </p>
+        <h4>Overall Thoughts</h4>
+        <p>
+            My testing images tend to be more complex with more background noise because i wanted to see if it can be applied in a real setting like my business case.
+            <br>
+            This model can be improved by using more data, bounding boxes, have less overlaps and try to use images with a higher brightness.</p>
+
+        <h4>Outcome & Results Achieved</h4>
+        <p>Achieved A Grade for this Module</p>
+    </section>
+
+</body>
+<footer class="footer">
+    <div class="container">
+
+      <div class="box footer-left">
+        <img src="../resources/namelogo.png"/>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/amber-yeo-51a4b2242/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://instagram.com/amberyeoe?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/amberyeoe"><i class="fa-brands fa-github"></i></a>           
+        </div>
+      </div>                 
+      <div class="box">
+        <div class="email">
+          <div class="footer-header">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+          </div>
+          <p>Amberyeo21@gmail.com</p>
+        </div>
+      
+        <div class="contact">
+          <div class="footer-header">
+            <i class="fas fa-phone"></i>
+            <h3>Contact</h3>
+          </div>
+          <p>+65-11111111</p>
+        </div>
+      </div>
+      
+      <hr>
+    </div>
+    <section style="width:100%;margin:0px;">
+      <div class="copyright" style="padding: 10px;">
+        <div style="width:100%; padding: 20px; text-align: center">
+          <p>Copyright 2022 &copy; Amber Yeo | All rights reserved.</p>
+        </div>
+      </div>
+     </section>
+  </footer>
+ <script src="../js/flickity.pkgd.min.js"></script>
+ <script src="../js/flickity.js"></script>
+ <script src="../js/portfolio.js"></script>
+ <script src="../js/projects.js"></script>
+</html>

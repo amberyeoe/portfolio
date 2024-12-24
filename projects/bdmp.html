@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../resources/a-logo.png">
+    <title>Amber's Portfolio</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/flickity.css">
+  </head>
+  <body onload="readurl()"> <!-- to filter the page  -->
+    <nav class="topnav" id="myTopnav">
+        <div class="container">
+          <a href="../index.html" style="padding:0; display:inline">
+            <img src="../resources/namelogo.png" alt="Logo" class="nav-logo" id="navLogo">
+          </a>
+          <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
+          <div class="nav-items">
+            <a href="../index.html" class="item">home</a>
+            <a href="../index.html#project" class="item">Projects</a>    
+            <a href="../index.html#awards" class="item">Achievements</a>                                                           
+            <a href="../index.html#skills"class="item">Skills</a>
+            <a href="mailto:amberyeo21@gmail.com" class="item">Contact</a>  
+            <a href="https://www.linkedin.com/in/amber-yeo-51a4b2242/" class="t-socials"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://instagram.com/amberyeoe?igshid=YmMyMTA2M2Y=" class="t-socials"><i class="fa-brands fa-instagram"></i></a>           
+            <a href="https://github.com/amberyeoe" class="t-socials"><i class="fa-brands fa-github"></i></a>           
+          </div>
+        </div>
+        <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
+          <i class="ti-angle-down"></i>
+        </div>
+                
+        <script type="text/javascript" src="../js/portfolio.js"></script>
+    </nav>
+    <header>
+        <a href="../index.html#project"><i class="fa-solid fa-arrow-left"></i></a>
+        <h2 class="section-title">Multiplayer Games Win Rates</h2>
+    </header>
+
+    <section class="projects" style="margin-top: 50px;">
+      <div class="proj_details" id="proj_details">
+        <div class="banner">
+          <img src="../resources/lol.png" alt="" class="srm-header">
+        </div>
+        <h4>Project Scope </h4>
+        <p>To <u>identify and describe a business problem</u>, building a <u>big data pipeline</u> involving investigation and exploration of the big data before
+            performing analysis and developing a set of conclusions.
+            At the end of the big data pipeline, to <u>evaluate the effectiveness of the analytics solutions</u> in terms of
+            predictive accuracies as well as system scalability.
+            The evaluation of the results or conclusions should be supported by some metrics collected during the
+            machine learning flow.</p>
+        <h4>Background Information</h4>
+        <p>
+            In recent years, the global gaming industry has witnessed <u>unprecedented growth</u>, with online multiplayer games like League of Legends (LOL), Valorant and Dota 2 captivating millions of players worldwide. 
+            The e-sports industry has been seeing significant growth over the last few decades, becoming a <u>multibillion-dollar market with a massive global following</u>. 
+            These games not only <u>entertain</u> but also <u>fosters communities</u> where players engage, compete and collaborate on a global scale. 
+            However, amidst this growth, there remains a significant <b><u>gap in understanding match behavior, demographic trends and community sentiments</u></b> that influences these virtual worlds.  
+        
+        </p>
+        <h4>Problem Identified </h4>
+        <p>
+            With the rise of e-sports, player retention and satisfaction have become critical challenges. <b>Newcomers</b> often struggle with the <u>steep learning curve</u>, including character selection and item purchases, which can <u>lead to negative initial experiences</u>. This <b>discourages them from continuing to play</b>. 
+            Additionally, <b>seasoned players</b> face <u>difficulties in keeping up</u> with the <u>growing number of game options</u>, leading to <b>potential disengagement</b>.
+            <br><br>
+            From this medium article, “There were tons of rules, a game master and several different artifacts to needed tracking. We had spent over 3 hours trying to figure out the game and the whole ordeal was negative”. Suggesting that gaming can get <b>overwhelming</b>, leaving a <b>bad impression</b> for those who just start out playing the game
+
+            <br><br>
+        Problem Statement: The rise of e-sports presents <u><b>challenges in player retention and satisfaction</b></u>, with initial negative experiences and growing number of game options
+    
+        </p>
+
+        <h4>Stakeholders</h4>
+        <img src="../resources/bdmp_persona.png" alt="persona" class="srm-header">
+        <p>From the personas we derived our main stakeholders</p>
+        <p>Primary: E-sports Game Businesses who wants to understand game success and popularity  
+        <br>
+        Secondary: Players who want to improve game performance or want to know more about the games</p>
+
+        <h4>Proposed Solution</h4>
+        <p>To provide a <b>detailed analysis</b> of game play, demographic trends, and community feedback, focusing on 3 popular e-sports games: League of Legends (LOL), Dota 2, and Valorant. The goal is to understand game strategies, demographic influences, and the community's sentiment towards these games 
+            to <u>help stakeholders improve game enjoyment, informed of current trends, and community involvement</u>
+            <br><br>
+            Main Hypothesis: The success and popularity of multiplayer games are <u>influenced by match performance, viewership trends, and community sentiment</u>, leading to higher win rates, increased tournament winnings, and overall game popularity
+        </p>
+
+        <h4>My Role & Solution</h4>
+        <p>My Sub-Hypothesis: Match attributes and statistics in League of Legends affects <b>game outcomes</b></p>
+        <p>I focused on the issue of <u>gap in understanding match behaviour/performance</u>
+            <br><br>
+            
+            <b>Identified the user needs from their pain points</b>:
+            <ul>
+                <li><b>Champion selection insights</b>: Users often struggle with deciding which champion to play as they begin gaming. They want insights on effective champion selection tailored to specific roles, positions, and personal preferences, to make informed decisions on champion selected.</li>
+                <li><b>Winning strategies</b>: Users want to know effective strategies that can increase their chances of winning matches. This can be through in-game events like towers taken, dragons killed, champion selected, champion counter picks, perks and items bought.</li>
+            </ul>
+
+        </p>
+       
+        <h4>My Work Process</h4>
+        <p>
+          <b>League of Legends Player Data</b>
+            <br>
+            The first API link returns information of players in Challenger tier (highest tier) like their league points gathered from winning matches, total wins, loss and their summonerids. While the second API link uses the summonerId returned to get their respective puuids to be able to get the match data later. This data provides detailed information about player performance and demographics. 
+            <br>
+            This dataset is crucial to retrieve player match data. By integrating this dataset with match data, we can analyze how player attributes, such as rank and win-loss records, correlate with match outcomes. Understanding the profiles of top players and retrieving their match data can offer insights of where top players stand and factors that contribute to higher win rates.
+            <br>
+            Type of dataset (initial):  JSON
+            <br>
+            Type of dataset (transformed):  CSV
+            <br>
+            Number of rows: 2.6k
+            <br>
+            Columns used: puuid, rank, league points, wins, losses, platform, region, inactive, summonerID
+            <br>
+            <b>Data cleaning and transformation: </b>
+            The first API provides data on Challenger tier players from each platform region with no null rows. After collecting players from all regions, I re-ranked them based on their league points to ensure a consistent and comparable ranking system across different regions. The Challenger league API only provides the player's summonerId, which is not sufficient to retrieve their match data. To obtain comprehensive match information, I needed the player's puuid (Player Unique Identifier). The puuid is required to access detailed match history and performance data for each player Using a second API endpoint, I made an additional API call for each player to retrieve their puuid using the summonerId. This ensured that I could collect and analyze complete match data for Challenger tier players from various regions
+            
+            <b>Data understanding</b>
+            <br>
+          <b>League of Legends Match details Data</b>
+            <br>
+
+          
+
+          <b>Data understanding</b>
+            <br>
+
+          <b>Data Streaming</b>
+            <br>
+
+          <b>Data Modelling</b>
+            <br>
+
+          <b>Dashboards</b>
+            <br>
+
+        </p>
+          
+        </p>
+        <h4>Outcome & Results Achieved</h4>
+        <p>Nominated for Outstanding Presentation, awarded Distinction grade</p>
+    </section>
+
+</body>
+<footer class="footer">
+    <div class="container">
+
+      <div class="box footer-left">
+        <img src="../resources/namelogo.png"/>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/amber-yeo-51a4b2242/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://instagram.com/amberyeoe?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/amberyeoe"><i class="fa-brands fa-github"></i></a>           
+        </div>
+      </div>                 
+      <div class="box">
+        <div class="email">
+          <div class="footer-header">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+          </div>
+          <p>Amberyeo21@gmail.com</p>
+        </div>
+      
+        <div class="contact">
+          <div class="footer-header">
+            <i class="fas fa-phone"></i>
+            <h3>Contact</h3>
+          </div>
+          <p>+65-11111111</p>
+        </div>
+      </div>
+      
+      <hr>
+    </div>
+    <section style="width:100%;margin:0px;">
+      <div class="copyright" style="padding: 10px;">
+        <div style="width:100%; padding: 20px; text-align: center">
+          <p>Copyright 2022 &copy; Amber Yeo | All rights reserved.</p>
+        </div>
+      </div>
+     </section>
+  </footer>
+ <script src="../js/flickity.pkgd.min.js"></script>
+ <script src="../js/flickity.js"></script>
+ <script src="../js/portfolio.js"></script>
+ <script src="../js/projects.js"></script>
+</html>
