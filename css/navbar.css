@@ -76,8 +76,13 @@
     padding-left: 8px !important;
   }
   
-   .topnav .icon { /*hanburger menu icon*/
+   .topnav a.icon { /*hanburger menu icon*/
     display: none;
+  }
+
+  .topnav a:not(.dropdown-content a){
+    font-size: 18px;
+    margin-top: 5px;
   }
 
   .scroll-indicator {
@@ -168,21 +173,27 @@
     
   }
   
-  @media screen and (max-width: 1400px) {
+  @media screen and (max-width: 1500px) {
     .topnav .t-socials{
       font-size: 24px !important;
       padding-top: 4.5px !important;
     }
+    .topnav a:not(.dropdown-content a) {
+      font-size: 13px;
+      padding: 12px 8px;
+    }
   }
   
-  @media screen and (max-width: 1300px) {
+  @media screen and (max-width: 500px) {
       .topnav a:not(.dropdown-content a) {
         font-size: 13px;
         padding: 12px 8px;
       }
+      
   }
   
-  @media screen and (max-width: 1200px) {
+  
+  @media screen and (max-width: 1000px) {
     .topnav a{
       display: none;
     }
@@ -190,7 +201,7 @@
     .topnav a.icon {
       float: right;
       display: block;
-      margin-top: 10px;
+      margin-top: 5px;
       color:black !important;
     }
     .topnav.responsive img {
@@ -211,9 +222,6 @@
       padding-left: 0px !important;
     }
 
-  }
-  
-  @media screen and (max-width: 1200px) {
     .topnav.responsive .icon {
       position: relative;
       float: right;
