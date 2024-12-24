@@ -78,12 +78,14 @@
   
    .topnav a.icon { /*hanburger menu icon*/
     display: none;
-  }
-
-  .topnav a:not(.dropdown-content a){
-    font-size: 18px;
+    font-size: 17px;
     margin-top: 5px;
   }
+
+  /* .topnav a:not(.dropdown-content a){
+    font-size: px;
+    margin-top: 5px;
+  } */
 
   .scroll-indicator {
     position: fixed;
@@ -178,8 +180,8 @@
       font-size: 24px !important;
       padding-top: 4.5px !important;
     }
-    .topnav a:not(.dropdown-content a) {
-      /* font-size: 14px; */
+    .topnav .nav-items {
+      font-size: 13px;
       padding: 12px 8px;
     }
   }
@@ -204,6 +206,7 @@
       margin-top: 0px;
       padding-bottom: 20px;
       display: none;
+      font-size: 12px;
     }
 
     .nav-logo {
@@ -242,4 +245,5 @@
         padding-top: 25px;
       }
   }
+
   
