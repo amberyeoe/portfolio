@@ -76,9 +76,9 @@
     padding-left: 8px !important;
   }
   
-   .topnav a.icon { /*hanburger menu icon*/
+   .topnav .icon { /*hanburger menu icon*/
     display: none;
-    font-size: 17px;
+    font-size: 20px;
     margin-top: 5px;
   }
 
@@ -195,7 +195,8 @@
     .topnav a.icon {
       float: right;
       display: block;
-      margin-top: 5px;
+      margin-top: 10px;
+      font-size: 25px;
       color:black !important;
     }
     .topnav.responsive img {
