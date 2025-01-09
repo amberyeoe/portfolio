@@ -190,6 +190,12 @@ body { font-family: sans-serif; }
     height: 90px;
 }
 
+@media screen and (min-width: 1050px){
+    .project{
+        margin-top: 180px;
+    }
+}
+
 @media screen and (max-width: 950px){
     .carousel-cell{
         height: 500px;
